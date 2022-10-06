@@ -19,7 +19,11 @@ Our aim is to aid the user by providing more personalized hotel recommendations 
 </ol>
 
 ## Unsupervised Learning
-
+<ol>
+  <li>Hierarchical Clustering .</li>
+  <li>GMM (K-means for initialization)</li>
+  <li>DBSCAN.</li>
+</ol>
 # References
 [1] https://www.stratosjets.com/blog/online-travel-statistics/
 
