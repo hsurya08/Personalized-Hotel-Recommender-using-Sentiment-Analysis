@@ -53,11 +53,11 @@ The Ultimate goal of this project is to recommend a list of hotels to the user b
 
 # Team Responsibilities
 <ul>
-  <li>Sunil Ravilla - Supervised Learning, Data collection and Cleaning</li>
-  <li>Prasanth Bathala - Supervised Learning, Data collection and Cleaning</li>
-  <li>Nigam Katta - Unsupervised Learning, Exploratory Data Analysis</li>
-  <li>Hemanth Sai Surya Kumar Tammana - Unsupervised Learning, Evaluation Metrics</li>
-  <li>Sahaj Jha - Unsupervised Learning, Evaluation Metrics</li>
+  <li><strong>Sunil Ravilla</strong> - Supervised Learning, Data collection and Cleaning</li>
+  <li><strong>Prasanth Bathala</strong> - Supervised Learning, Data collection and Cleaning</li>
+  <li><strong>Nigam Katta</strong> - Unsupervised Learning, Exploratory Data Analysis</li>
+  <li><strong>Hemanth Sai Surya Kumar Tammana</strong> - Unsupervised Learning, Evaluation Metrics</li>
+  <li><strong>Sahaj Jha</strong> - Unsupervised Learning, Evaluation Metrics</li>
 </ul>
 
 
