@@ -1,5 +1,5 @@
 title: CS 7641 Machine Learning Project
 description: ML Based User-Centric Hotel Recommendations System
-show_downloads: true
+show_downloads: false
 google_analytics:
-theme: jekyll-theme-architect
+theme: jekyll-theme-leap-day
