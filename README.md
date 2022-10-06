@@ -37,8 +37,17 @@ Our aim is to aid the user by providing more personalized hotel recommendations 
 
 # Potential Results
 ## Unsupervised Learning
+<ul>
+  <li>Words with comparable meanings are placed in categories by the Hierarchical clustering algorithm.</li>
+  <li>Examine it with various clustering techniques.</li>
+</ul>
 
 ## Supervised Learning
+<ul>
+  <li>Based on the Sentiment component, Classify the reviews into good, negative, and neutral categories.</li>
+  <li>Try out different classification techniques to identify the best model.</li>
+</ul>
+
 # References
 [1] https://www.stratosjets.com/blog/online-travel-statistics/
 
