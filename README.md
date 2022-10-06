@@ -13,17 +13,32 @@ Our aim is to aid the user by providing more personalized hotel recommendations 
 # Methods
 ## Supervised Learning
 <ol>
-  <li>Multi-class Logistic Regression.</li>
-  <li>Support Vector Machine (SVM).</li>
-  <li>Random Forest Classifier.</li>
+  <li>Multi-class Logistic Regression</li>
+  <li>Support Vector Machine (SVM)</li>
+  <li>Random Forest Classifier</li>
 </ol>
 
 ## Unsupervised Learning
 <ol>
-  <li>Hierarchical Clustering .</li>
+  <li>Hierarchical Clustering</li>
   <li>GMM (K-means for initialization)</li>
-  <li>DBSCAN.</li>
+  <li>DBSCAN</li>
 </ol>
+
+# Evaluation Metric
+<ul>
+  <li>F Measure </li>
+  <li>Recall </li>
+  <li>Precision</li>
+  <li>Silhouette</li>
+  <li>Beta-CV</li>
+  <li>METEOR</li>
+</ul>
+
+# Potential Results
+## Unsupervised Learning
+
+## Supervised Learning
 # References
 [1] https://www.stratosjets.com/blog/online-travel-statistics/
 
