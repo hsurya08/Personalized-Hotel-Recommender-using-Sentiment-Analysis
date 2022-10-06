@@ -12,7 +12,11 @@ Our aim is to aid the user by providing more personalized hotel recommendations 
 
 # Methods
 ## Supervised Learning
-
+<ol>
+  <li>Multi-class Logistic Regression.</li>
+  <li>Support Vector Machine (SVM).</li>
+  <li>Random Forest Classifier.</li>
+</ol>
 
 ## Unsupervised Learning
 
