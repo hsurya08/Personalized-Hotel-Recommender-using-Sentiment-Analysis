@@ -14,3 +14,7 @@ Our aim is to aid the user by providing more personalized hotel recommendations 
 
 
 ## Unsupervised Learning
+
+# References
+[1] https://www.stratosjets.com/blog/online-travel-statistics/
+[2] K. Takuma, J. Yamamoto, S. Kamei and S. Fujita, "A Hotel Recommendation System Based on Reviews: What Do You Attach Importance To?," 2016 Fourth International Symposium on Computing and Networking (CANDAR), 2016, pp. 710-712, doi: 10.1109/CANDAR.2016.0129.
