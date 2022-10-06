@@ -48,6 +48,19 @@ Our aim is to aid the user by providing more personalized hotel recommendations 
   <li>Try out different classification techniques to identify the best model.</li>
 </ul>
 
+# Goal
+The Ultimate goal of this project is to recommend a list of hotels to the user based on their customized preferences.
+
+# Team Responsibilities
+<ul>
+  <li>Sunil Ravilla - Supervised Learning, Data collection and Cleaning</li>
+  <li>Prasanth Bathala - Supervised Learning, Data collection and Cleaning</li>
+  <li>Nigam Katta - Unsupervised Learning, Exploratory Data Analysis</li>
+  <li>Hemanth Sai Surya Kumar Tammana - Unsupervised Learning, Evaluation Metrics</li>
+  <li>Sahaj Jha - Unsupervised Learning, Evaluation Metrics</li>
+</ul>
+
+
 # References
 [1] https://www.stratosjets.com/blog/online-travel-statistics/
 
