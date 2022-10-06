@@ -1,4 +1,3 @@
-# ML Based User-Centric Hotel Recommendations System
 CS 7641 Machine Learning Semester Project
 
 # Introduction
