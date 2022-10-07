@@ -1,12 +1,12 @@
-ML Based User-Centric Hotel Recommendations System 
+Personalized Hotel Recommender using Sentiment Analysis
 # Introduction
 <div align ="justify"> Traveling is one of the most fundamental human activities. While traveling, finding good accommodation is the most challenging part. Based on the statistics of 2018 travel booking, there were about 148 million online travel bookings, out of which 82% were via an app or website [1]. This draws attention to the reliance of people on websites and apps for finding accommodation. Most of these websites and apps have one or other metrics to help users to book hotels, however, oftentimes they lack being user-centric, taking into account different variables for each user. A lot of work on this topic of hotel recommendation systems, takes just the user preference and not hotel reviews or doesn’t compute the difference of importance for different users [2]. </div>
 
 # Problem Definition and Motivation
-<div align ="justify"> Checking the ratings/reviews had been the most commonly used method for identifying a suitable choice while booking a Hotel. However, the major concern here is that these ratings were given based on the unique perspective of a single user. One person's 5-star rating can be another person's 2-star rating. Some people might prefer a low price over the ambiance, while others might choose the hotel with a better ambiance irrespective of the price. 
+<div align ="justify"> When reserving a hotel, the most popular approach for making a good decision has been to read the ratings and reviews. But the main issue here is that these evaluations were made based on the viewpoint of one individual. A 5-star rating for one person may be a 2-star rating for another. Some people would select a hotel with a lower price over the ambiance, while others might do so regardless of cost. 
 <br>
 <br>
-Our aim is to aid the user by providing more personalized hotel recommendations by considering his preference for various aspects such as price, food, ambiance, etc rather than showing a general rating of the hotel. This in turn helps the user in identifying the most suitable hotel based on his choice, more efficiently and quickly.
+Instead of displaying a generic hotel rating, our goal is to help the customer by making more individualized hotel suggestions that consider their preferences for different factors like pricing, cuisine, atmosphere, etc. In turn, this facilitates a quicker and more effective process for the customer to choose the best hotel depending on their preferences.
 </div>
 
 # Methods
