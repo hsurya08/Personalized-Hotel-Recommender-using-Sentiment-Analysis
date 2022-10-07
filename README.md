@@ -1,4 +1,4 @@
-
+ML Based User-Centric Hotel Recommendations System 
 # Introduction
 <div align ="justify"> Traveling is one of the most fundamental of human activities. While traveling, finding good accommodation is the most challenging part. Based on the statistics of 2018 travel booking, there were about 148 million online travel bookings, out of which 82% were via an app or website [1]. This draws attention to the reliance of people on websites and apps for finding accommodation. Most of these websites and apps have one or other metrics to help users to book hotels, however oftentimes they lack being user-centric, taking into account different variables for each user. Lot of work on this topic of hotel recommendation systems, takes just the user preference and not hotel reviews or doesn’t compute the difference of importance for different users [2]. </div>
 
