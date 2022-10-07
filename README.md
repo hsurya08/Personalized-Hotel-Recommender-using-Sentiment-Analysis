@@ -49,7 +49,7 @@ Our aim is to aid the user by providing more personalized hotel recommendations 
 
 # Proposed Timeline
 <a href="Ganntchart.xlsx" download>
-  <img src="gannt.jpg">
+  <img src="gannt.png">
 </a>
 
 # Team Responsibilities
