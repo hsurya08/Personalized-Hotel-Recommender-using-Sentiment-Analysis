@@ -48,7 +48,7 @@ Our aim is to aid the user by providing more personalized hotel recommendations 
 </ul>
 
 # Proposed Timeline
-<a href="/images/myw3schoolsimage.jpg" download>
+<a href="Ganntchart.xlsx" download>
   <img src="gannt.jpg">
 </a>
 
