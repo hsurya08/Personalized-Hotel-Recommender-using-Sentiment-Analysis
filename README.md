@@ -47,6 +47,8 @@ Our aim is to aid the user by providing more personalized hotel recommendations 
   <li>Try out different classification techniques to identify the best model.</li>
 </ul>
 
+# Proposed Timeline
+<img src="gannt.jpg" alt="Italian Trulli">
 # Team Responsibilities
 <ul>
   <li><strong>Sunil Ravilla</strong> - Supervised Learning, Data collection and Cleaning</li>
