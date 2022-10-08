@@ -41,14 +41,15 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 # Potential Results
 ## Unsupervised Learning
 <ul>
-  <li>Words with comparable meanings are placed in categories by the Hierarchical clustering algorithm.</li>
-  <li>Examine it with various clustering techniques.</li>
+  <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
+  <li>Ability to provide the best hotels based on the user preferences.</li>
+  <li>Examine it with various clustering Techniques.</li>
 </ul>
 
 ## Supervised Learning
 <ul>
-  <li>Based on the Sentiment component, Classify the reviews into good, negative, and neutral categories.</li>
-  <li>Try out different classification techniques to identify the best model.</li>
+  <li>Build a Sentiment classifier to tag the reviews into positive, negative, and neutral categories with an accuracy of 60 – 70 %.</li>
+  <li>Analyze it with different classification algorithms.</li>
 </ul>
 
 # Proposed Timeline
