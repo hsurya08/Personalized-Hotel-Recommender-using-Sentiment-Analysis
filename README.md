@@ -28,16 +28,6 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
   <li>DBSCAN</li>
 </ol>
 
-# Evaluation Metric
-<ul>
-  <li>F Measure </li>
-  <li>Recall </li>
-  <li>Precision</li>
-  <li>Silhouette</li>
-  <li>Beta-CV</li>
-  <li>METEOR</li>
-</ul>
-
 # Potential Results
 ## Unsupervised Learning
 <ul>
@@ -50,6 +40,16 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 <ul>
   <li>Build a Sentiment classifier to tag the reviews into positive, negative, and neutral categories with an accuracy of 60 – 70 %.</li>
   <li>Analyze it with different classification algorithms.</li>
+</ul>
+
+# Evaluation Metric
+<ul>
+  <li>F Measure </li>
+  <li>Recall </li>
+  <li>Precision</li>
+  <li>Silhouette</li>
+  <li>Beta-CV</li>
+  <li>METEOR</li>
 </ul>
 
 # Proposed Timeline
