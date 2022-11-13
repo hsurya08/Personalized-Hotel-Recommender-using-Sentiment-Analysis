@@ -34,11 +34,10 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 
 ## Dataset Cleaning
 <div align ="justify"> The project we are developing uses the “515k-hotel-reviews-data-in-europe” dataset for our models training. The data was scraped from Booking.com. 515,000 people have evaluated and reviewed 1493 upmarket hotels from around Europe in this dataset. There are 17 feature columns in total, including Hotel Address, Review Date, Average Score, Hotel Name, etc. in the csv file. The dataset's unused columns have been removed because our model presently relies only on some columns of information from it.
-
-<br />
-Additionally, some of the data samples from the dataset just include ratings rather than written comments. We updated them with empty strings in order to address such review samples and to increase the model's confidence on the dataset. 
 <br>
-
+<br>
+Additionally, some of the data samples from the dataset just include ratings rather than written comments. We updated them with empty strings in order to address such review samples and to increase the model's confidence on the dataset.
+<br>
 <br>
 Screenshots of both the original and modified data sets are provided below.
 </div>
