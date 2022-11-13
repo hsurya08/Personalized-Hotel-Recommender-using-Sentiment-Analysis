@@ -37,6 +37,7 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 <br>
 Additionally, some of the data samples from the dataset just include ratings rather than written comments. We updated them with empty strings in order to address such review samples and to increase the model's confidence on the dataset. 
 <br>
+
 <br>
 Screenshots of both the original and modified data sets are provided below.
 </div>
