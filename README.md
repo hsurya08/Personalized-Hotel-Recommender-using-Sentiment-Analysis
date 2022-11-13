@@ -39,13 +39,11 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 Screenshots of both the original and modified data sets are provided below.
 </div>
 
-<div align ="justify">
-<Original Dataset from Kaggle:>
-</div>
+
+Original Dataset from Kaggle:
 <img src="OriginalSnippet.jpg">
-<div align ="justify">
-<Original Dataset Drive Link: "https://drive.google.com/file/d/1gHVqypEysmkC1uxz4siE0P8jhmtG9sDx/view?usp=share_link">
-</div>
+Original Dataset Drive Link: "https://drive.google.com/file/d/1gHVqypEysmkC1uxz4siE0P8jhmtG9sDx/view?usp=share_link"
+
 # Potential Results
 
 ## Unsupervised Learning
