@@ -38,7 +38,7 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 <br>
 Screenshots of both the original and modified data sets are provided below.
 </div>
-<a href="url"> https://drive.google.com/file/d/1gHVqypEysmkC1uxz4siE0P8jhmtG9sDx/view?usp=share_link </a>
+<a href="url"> [Google Drive](https://drive.google.com/file/d/1gHVqypEysmkC1uxz4siE0P8jhmtG9sDx/view?usp=share_link) </a>
   <img src="OriginalSnippet.jpg">
 </a>
 
