@@ -33,6 +33,8 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 </ol>
 
 # Potential Results
+## Dataset Cleaning
+
 ## Unsupervised Learning
 <ul>
   <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
