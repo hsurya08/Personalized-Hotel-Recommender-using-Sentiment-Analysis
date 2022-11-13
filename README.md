@@ -38,6 +38,9 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 <br>
 Screenshots of both the original and modified data sets are provided below.
 </div>
+<a href="Ganntchart.xlsx" download>
+  <img src="OriginalSnippet.jpg">
+</a>
 
 # Potential Results
 
