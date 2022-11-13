@@ -40,7 +40,8 @@ Screenshots of both the original and modified data sets are provided below.
 </div>
 
 
-Original Dataset from Kaggle:
+
+### Original Dataset from Kaggle:
 <img src="OriginalSnippet.jpg">
 Original Dataset Drive Link: "https://drive.google.com/file/d/1gHVqypEysmkC1uxz4siE0P8jhmtG9sDx/view?usp=share_link"
 
