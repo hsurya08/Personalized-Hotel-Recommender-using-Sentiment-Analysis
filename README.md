@@ -12,7 +12,7 @@ The dataset that we are using consists reviews of various hotels present in Euro
 
 # Problem Definition and Motivation
 <div align ="justify"> When reserving a hotel, the most popular approach for making a good decision has been to read the ratings and reviews. But the main issue here is that these evaluations were made based on the viewpoint of one individual. A 5-star rating for one person may be a 2-star rating for another. Some people would select a hotel with a lower price over the ambiance, while others might do so regardless of cost. 
-</br>
+<br>
 <br>
 Instead of displaying a generic hotel rating, our goal is to help the customer by making more individualized hotel suggestions that consider their preferences for different factors like pricing, cuisine, atmosphere, etc. In turn, this facilitates a quicker and more effective process for the customer to choose the best hotel depending on their preferences.
 </div>
@@ -35,7 +35,7 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 ## Dataset Cleaning
 <div align ="justify"> The project we are developing uses the “515k-hotel-reviews-data-in-europe” dataset for our models training. The data was scraped from Booking.com. 515,000 people have evaluated and reviewed 1493 upmarket hotels from around Europe in this dataset. There are 17 feature columns in total, including Hotel Address, Review Date, Average Score, Hotel Name, etc. in the csv file. The dataset's unused columns have been removed because our model presently relies only on some columns of information from it.
 
-<br>
+<br />
 Additionally, some of the data samples from the dataset just include ratings rather than written comments. We updated them with empty strings in order to address such review samples and to increase the model's confidence on the dataset. 
 <br>
 
