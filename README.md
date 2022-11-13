@@ -49,7 +49,7 @@ Screenshots of both the original and modified data sets are provided below.
 Original Dataset Drive Link: https://drive.google.com/file/d/1gHVqypEysmkC1uxz4siE0P8jhmtG9sDx/view?usp=share_link
 
 #### Processed Dataset:
-<img src="OriginalSnippet.jpg">
+<img src="CleanedDataFrame.jpg">
 Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LGhALzzqpmF7Unk/view?usp=share_link
 
 
