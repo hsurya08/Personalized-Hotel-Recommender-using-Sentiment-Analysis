@@ -65,12 +65,12 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 </ul>
 
 ## Supervised Learning
-<!-->
+<!--
 <ul>
   <li>Build a Sentiment classifier to tag the reviews into positive, negative, and neutral categories with an accuracy of 60 – 70 %.</li>
   <li>Analyze it with different classification algorithms.</li>
 </ul>
-<-->
+-->
 <div align ="justify"> We employ Supervised Learning algorithms: Multi-class Logistic Regression, Naive Bayes and Support Vector Machine, to classify our data into classes of positive, negative, and neutral. The data is divided in the ratio of 80-20 for training and testing. The algorithms are evaluated based on different metrics as given below. This further helps to compare among them. 
 <br>
 <br>
