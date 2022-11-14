@@ -76,7 +76,7 @@ The below is images are the confusion matrices we have generated for the dataset
 
 <img src="NB.jpeg">
 
-## Logistic algorithm:
+## Logistic regression:
 
 <img src="LR.jpeg">
 
