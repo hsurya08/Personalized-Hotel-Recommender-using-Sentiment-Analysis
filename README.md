@@ -64,12 +64,14 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
   <li>Analyze it with different classification algorithms.</li>
 </ul>
 -->
+### Approach:
 <div align ="justify"> For the purpose of categorizing our data into classes of positive, negative, and neutral information, we use the supervised learning methods like Multi-class Logistic Regression, Naive Bayes, and Support Vector Machine. For training and testing, the data are split in an 80-20 ratio. The algorithms are assessed using many metrics, which are listed below. This makes it easier to compare them.
 <br>
 <br>
 <div align ="justify"> We utilize Vader Sentiment Analyzer to calculate a sentiment score for each review after cleaning and analysing the data. Thus, we receive scores ranging from -1 to 1. Then, we determine thresholds for negative (less than -0.25), neutral (between -0.25 and 0.25) and positive data (more than 0.25). These will function like the real deal. We also divide the data 80-20 between training and testing. After that, we run the Supervised algorithms and do the metric evaluation.
 <br>
 <br>
+### Implementation:
 We have implemented Naive Bayes algorithm, Logistic regression and Support Vector Machine on our dataset to categorize the reviews into positive, negative and neutral.
 The below are images of the confusion matrices we have generated for the dataset.
   
@@ -93,7 +95,7 @@ The below are images of the confusion matrices we have generated for the dataset
   <li>Examine it with various clustering Techniques.</li>
   -->
    
-  ### Usage:
+  ### Approach:
   <div align ="justify">
   The goal of this Hierarchical clustering is to identify the key themes in a collection of reviews. For that, we group the words with similar meanings             
   together.Once the results of the hierarchical clustering have been reduced to the most advantageous dendrograms, we assign the cluster with an appropriate aspect 
