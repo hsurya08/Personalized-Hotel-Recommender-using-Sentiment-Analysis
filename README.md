@@ -72,23 +72,25 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 ### Approach:
 <div align ="justify"> For the purpose of categorizing our data into classes of positive, negative, and neutral information, we use the supervised learning methods like Multi-class Logistic Regression, Multinomial Naive Bayes, and Support Vector Machine. For training and testing, the data was split in an 80:20 ratio.
 <br>
-<br>
-<div align ="justify"> The cleaned and analyzed raw datset has uncategorized reviews. To categorize them, we use a library called <strong>Vader Sentiment Analyzer</strong> which will calculate the sentiment score for each review in the dataset. The range of Sentiment Score varies between -1 and +1. In order to classiy them into the buckets of negative, neutral and positive, a threshold is fixed. The classification of the reviews based on the sentiment score is as follows:
-
-  => Define the class as Negative, if the sentiment score is between -1 and -0.25
+</div>
+ <div align ="justify"> The cleaned and analyzed raw datset has uncategorized reviews. To categorize them, we use a library called <strong>Vader Sentiment Analyzer</strong> which will calculate the sentiment score for each review in the dataset. The range of Sentiment Score varies between -1 and +1. In order to classiy them into the buckets of negative, neutral and positive, a threshold is fixed. The classification of the reviews based on the sentiment score is as follows:
+</div>
+  <ul>
+    <li> Define the class as Negative, if the sentiment score is between -1 and -0.25 </li>
   
-  => Define the class as Neutral, if the sentiment score is between -0.25 and +0.25
+   <li> Define the class as Neutral, if the sentiment score is between -0.25 and +0.25 </li>
   
-  => Define the class as Positive, if the sentiment score is between +0.25 and +1.
+   <li> Define the class as Positive, if the sentiment score is between +0.25 and +1. </li>
+ </ul>
+<div align ="justify"> This classificaion of data from the Vader Semtiment Analyzer is assumed to be the ground truth labels of the data. With data split of 80:20 as train and test samples, Supervised learning algorithms are applied to classify the data. Further, the model's performance is evaluated by various metrics such as F1 score, Accuracy, Precision, Recall, and ROC-AUC. 
+  </div>
   
-  This classificaion of data from the Vader Semtiment Analyzer is assumed to be the ground truth labels of the data. With data split of 80:20 as train and test samples, Supervised learning algorithms are applied to classify the data. Further, the model's performance is evaluated by various metrics such as F1 score, Accuracy, Precision, Recall, and ROC-AUC. 
-    
 ### Implementation:
-
+<div align ="justify">
 Multinomial Naive Bayes, Logistic Regression and Support Vector Machine were utilized to classify the reviews into the positive, negative and neutral. 
 <br>
 The confustion matrix for all the models are as follows:
-  
+</div>
 ## Naive bayes (Confusion Matrix):
 
 <img src="NB.jpeg">
@@ -122,9 +124,9 @@ Based on the confusion matrix above, Precision, Recall and F1 Score for all the 
 | Negative     | 0.65  | 0.71 | 0.68  |
 | Neutral    | 0.68  | 0.65 | 0.66  |
 | Positive   | 0.82  | 0.78 | 0.80 |
-  
- 
-  Based on the Precision, Recall and F1 Score calculated above, The metrics like Macro-average Precision, Weighted Average Precision, Macro Average Recall, Weighted Average Recall, Macro Average F-1 Score, Weighted Average F-1 Score and accuracy are computed and tabulated below.
+
+<br>
+Based on the Precision, Recall and F1 Score calculated above, The metrics like Macro-average Precision, Weighted Average Precision, Macro Average Recall, Weighted Average Recall, Macro Average F-1 Score, Weighted Average F-1 Score and accuracy are computed and tabulated below.
   
   | Evaluation Metrics  | Macro Average Precision | Weighted Average Precision  | Macro Average Recall | Weighted Average Recall | Macro Average F-1 Score | Weighted Average F-1 Score | Accuracy |
 | ------------- | ------------- | ------------- | ------------- | ------------- |------------- |------------- |------------- |
@@ -162,7 +164,7 @@ Based on the confusion matrix above, Precision, Recall and F1 Score for all the 
   ### Approach:
   <div align ="justify">
   We plan to use Hierarchial clustering to cluster the similar words. The goal of this Hierarchical clustering is to identify the key attributes in a collection of reviews. For that, we group the words with similar meanings. Once the dendogram obtained from the hierarchical clustering have been disected into clusters, we assign each of the cluster with an appropriate aspect name.
-    
+  </div>
     
   ### Steps:
   <li>Firstly, we create a noun vector from each review. Ex: [ ‘Food’, ‘Noodles’, ‘room’] </li>
