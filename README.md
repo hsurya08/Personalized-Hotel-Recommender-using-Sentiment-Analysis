@@ -86,9 +86,9 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 ### Implementation:
 
 Multinomial Naive Bayes, Logistic Regression and Support Vector Machine were utilized to classify the reviews into the positive, negative and neutral. 
- The confustion matrix for all the models are as follows:
+<br>
+The confustion matrix for all the models are as follows:
   
-
 ## Naive bayes (Confusion Matrix):
 
 <img src="NB.jpeg">
