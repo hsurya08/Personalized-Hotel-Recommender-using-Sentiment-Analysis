@@ -35,10 +35,10 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 </ol>
 
 ## Dataset Collection and Cleaning
-<div align ="justify"> The project we are developing uses the “515k-hotel-reviews-data-in-europe” dataset for our models training. The data was scraped from Booking.com. 515,000 people have evaluated and reviewed 1493 upmarket hotels from around Europe in this dataset. There are 17 feature columns in total, including Hotel Address, Review Date, Average Score, Hotel Name, etc. in the csv file. The dataset's unused columns have been removed because our model presently relies only on some columns of information from it.
+<div align ="justify"> The project makes use of the “515k-hotel-reviews-data-in-europe” dataset for training the models. The data was scraped from Booking.com. 515,000 people The data comprises of reviews evaluated by 515,000 people for 1493 upmarket hotels in Europe. There are 17 feature columns in total, including Hotel Address, Review Date, Average Score, Hotel Name, etc. in the csv file. The dataset's unused columns have been removed because our model currently relies only on some columns of information from it.
 <br>
 <br>
-Additionally, some of the data samples were just given with the overall ratings rather than a descriptive comments. In order to address such review samples, we have updated them with empty strings which ultimately increases the model's confidence on the dataset.
+Additionally, some of the data samples were just given with the overall ratings rather than a descriptive comments. Since the project concentrates on the user preferences rather than quantitative review value, such data is replaced with an empty string.
 <br>
 <br>
 Screenshots of both the original and modified data sets are provided below.
@@ -65,10 +65,10 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 </ul>
 -->
 ### Approach:
-<div align ="justify"> For the purpose of categorizing our data into classes of positive, negative, and neutral information, we use the supervised learning methods like Multi-class Logistic Regression, Naive Bayes, and Support Vector Machine. For training and testing, the data are split in an 80-20 ratio. The algorithms are assessed using many metrics, which are listed below. This makes it easier to compare them.
+<div align ="justify"> For the purpose of categorizing our data into classes of positive, negative, and neutral information, we use the supervised learning methods like Multi-class Logistic Regression, Multinomial Naive Bayes, and Support Vector Machine. For training and testing, the data are split in an 80-20 ratio. The algorithms are assessed using many metrics, which are listed below. This makes it easier to compare them.
 <br>
 <br>
-<div align ="justify"> We utilize Vader Sentiment Analyzer to calculate a sentiment score for each review after cleaning and analysing the data. Thus, we receive scores ranging from -1 to 1. Then, we determine thresholds for negative (less than -0.25), neutral (between -0.25 and 0.25) and positive data (more than 0.25). These will function like the real deal. We also divide the data 80-20 between training and testing. After that, we run the Supervised algorithms and do the metric evaluation.
+<div align ="justify"> The raw datset has uncategorized reviews. To categorize them, we use a library called **Vader Sentiment Analyzer** to calculate a sentiment score for each review after cleaning and analysing the data. Thus, we receive scores ranging from -1 to 1. Then, we determine thresholds for negative (less than -0.25), neutral (between -0.25 and 0.25) and positive data (more than 0.25). These will function like the real deal. We also divide the data 80-20 between training and testing. After that, we run the Supervised algorithms and do the metric evaluation.
 <br>
 <br>
 
