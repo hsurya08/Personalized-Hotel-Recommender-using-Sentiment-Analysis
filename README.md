@@ -71,16 +71,19 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 <div align ="justify"> The cleaned and analyzed raw datset has uncategorized reviews. To categorize them, we use a library called **Vader Sentiment Analyzer** which will calculate the sentiment score for each review in the dataset. The range of Sentiment Score varies between -1 and +1. In order to classiy them into the buckets of negative, neutral and positive, a threshold is fixed. The classification of the reviews based on the sentiment score is as follows:
 
   => Define the class as Negative, if the sentiment score is between -1 and -0.25
-  => Define the class as Neutral
+  => Define the class as Neutral, if the sentiment score is between -0.25 and +0.25
+  => Define the class as Positive, if the sentiment score is between +0.25 and +1.
   
-  ![Equation](https://latex.codecogs.com/gif.latex?Class%3D%5Cleft%5C%7B%20%5Cbegin%7Barray%7D%7Brcl%7D%20Negative%20%26%20%26%20sentiment%20Score%20%5Cleq%20-0.25%5C%5C%20Neutral%20%26%20%26%20-0.25%20%5Cleq%20sentiment%20Score%20%5Cleq%200.25%20%5C%5C%20Positive%20%26%20%26%20sentiment%20Score%20%5Cgeq%200.25%20%5C%5C%20%5Cend%7Barray%7D%20%5Cright.)
-  Thus, we receive scores ranging from -1 to 1. Then, we determine thresholds for negative (less than -0.25), neutral (between -0.25 and 0.25) and positive data (more than 0.25). These will function like the real deal. We also divide the data 80-20 between training and testing. After that, we run the Supervised algorithms and do the metric evaluation.
+  This classificaion of data from the Vader Semtiment Analyzer is assumed to be the ground truth labels of the data. With data split of 80:20 as train and test samples, Supervised learning algorthms are applied to classify the data. Further, the model's performance is evaluated by various metrics such as F1 score, Accuracy, Precision, Recall, and ROC-AUC. 
+  
 <br>
 <br>
 
 ### Implementation:
-We have implemented Naive Bayes algorithm, Logistic regression and Support Vector Machine on our dataset to categorize the reviews into positive, negative and neutral.
-The below are images of the confusion matrices we have generated for the dataset.
+
+  A total of 3 models are implemented for the task of classifying the reviews. Multinomial Naive Bayes, Logistic Regression and Support Vector Machine are utilized to classify the dataset into the positive, negative and neutral. The model's performance and results are as follows:
+
+ The confustion matrix for all the models are as follows:
   
 
 ## Naive bayes (Confusion Matrix):
@@ -96,13 +99,8 @@ The below are images of the confusion matrices we have generated for the dataset
 <img src="SVM.jpeg">
   
 ## Evaluation Metrics:
-
-We have used different evaluation metrics on the output of our models. The outcomes are tabulated below.
-| Evaluation Metrics  | Macro Average Precision | Weighted Average Precision  | Macro Average Recall | Weighted Average Recall | Macro Average F-1 Score | Weighted Average F-1 Score | Accuracy |
-| ------------- | ------------- | ------------- | ------------- | ------------- |------------- |------------- |------------- |
-| Naive Bayes    |  0.66 | 0.65 | 0.66 | 0.66 | 0.65 | 0.65 | 0.65 |
-| Logistic Regression    | 0.73 | 0.73 | 0.73 | 0.73 | 0.73 | 0.73  | 0.73 |
-| Support Vector Machine | 0.72  | 0.72 | 0.71 | 0.71 | 0.71 | 0.71   | 0.71 |
+  
+Based on the confusion matrix above, Precision, Recall and F1 Score for all the three models are computed and and tabulated below:
 
 | Naive Bayes |  Precision | Recall | F1 Score
 | ------------- | ------------- | ------------- | ------------- |
@@ -121,6 +119,15 @@ We have used different evaluation metrics on the output of our models. The outco
 | Negative     | 0.65  | 0.71 | 0.68  |
 | Neutral    | 0.68  | 0.65 | 0.66  |
 | Positive   | 0.82  | 0.78 | 0.80 |
+  
+  
+  | Evaluation Metrics  | Macro Average Precision | Weighted Average Precision  | Macro Average Recall | Weighted Average Recall | Macro Average F-1 Score | Weighted Average F-1 Score | Accuracy |
+| ------------- | ------------- | ------------- | ------------- | ------------- |------------- |------------- |------------- |
+| Naive Bayes    |  0.66 | 0.65 | 0.66 | 0.66 | 0.65 | 0.65 | 0.65 |
+| Logistic Regression    | 0.73 | 0.73 | 0.73 | 0.73 | 0.73 | 0.73  | 0.73 |
+| Support Vector Machine | 0.72  | 0.72 | 0.71 | 0.71 | 0.71 | 0.71   | 0.71 |
+
+
 
   ## ROC Graphs for our implementations:
   
