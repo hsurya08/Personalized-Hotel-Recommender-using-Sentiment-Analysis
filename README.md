@@ -69,13 +69,15 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 <br>
 <br>
 <div align ="justify"> The cleaned and analyzed raw datset has uncategorized reviews. To categorize them, we use a library called **Vader Sentiment Analyzer** which will calculate the sentiment score for each review in the dataset. The range of Sentiment Score varies between -1 and +1. In order to classiy them into the buckets of negative, neutral and positive, a threshold is fixed. The classification of the reviews based on the sentiment score is as follows:
-  $$
+ ```math
 E[\epsilon_n\epsilon_m]=\left\{
 \begin{array}{rcl}
 \sigma^2       &      & m = n\\
 0     &      & m \neq n\\
 \end{array} \right. 
-$$Thus, we receive scores ranging from -1 to 1. Then, we determine thresholds for negative (less than -0.25), neutral (between -0.25 and 0.25) and positive data (more than 0.25). These will function like the real deal. We also divide the data 80-20 between training and testing. After that, we run the Supervised algorithms and do the metric evaluation.
+```
+  
+  Thus, we receive scores ranging from -1 to 1. Then, we determine thresholds for negative (less than -0.25), neutral (between -0.25 and 0.25) and positive data (more than 0.25). These will function like the real deal. We also divide the data 80-20 between training and testing. After that, we run the Supervised algorithms and do the metric evaluation.
 <br>
 <br>
 
