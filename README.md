@@ -167,21 +167,17 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
   </div>
     
   ### Steps:
+  <ol>
   <li>Firstly, we create a noun vector from each review. Ex: [ ‘Food’, ‘Noodles’, ‘room’] </li>
   <li>After the noun vector is formed, we use the Spacy library to determine how similar each word is with other word in the vector. A matrix of size (words x words) with similarity values is generated.</li>
     
   <li>The Coorelation matrix for a single example is as shown below:</li>
-    
-  <ol>
-    
+       
   <img src="correlation.png">
-  </ol>
   
   <li>The dendogram obtained from Hierarchial clustering is dissected into clusters.</li>
-  <ol>
   <img src="hierar.png">
   </ol>
-
 <!--
 # Evaluation Metric
   
