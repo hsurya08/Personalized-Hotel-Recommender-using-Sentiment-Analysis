@@ -82,9 +82,13 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
   name.
   <li>Firstly, we create a noun work vector from each review. Ex: [ ‘Food’, ‘Noodles’, ‘room’] </li>
   <li>After the noun vector is formed, we use the Spacy library to determine how similar each word is with other word in the vector. A size of words x words similarity   matrix is generated.</li>
+  <ol>
   <img src="correlation.png">
+  </ol>
   <li>The Hierarchical clustering receives this similarity matrix as a correlation matrix.</li>
-  <img src="Hierar.png">
+  <ol>
+  <img src="hierar.png">
+  </ol>
   <li>Hierarchical clustering output is dissected into dendrograms.</li>
 
 
