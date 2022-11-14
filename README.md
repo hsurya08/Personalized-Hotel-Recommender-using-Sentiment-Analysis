@@ -68,10 +68,11 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 <br>
 <br>
 <div align ="justify"> We utilize Vader Sentiment Analyzer to calculate a sentiment score for each review after cleaning and analysing the data. Thus, we receive scores ranging from -1 to 1. Then, we determine thresholds for negative (less than -0.25), neutral (between -0.25 and 0.25) and positive data (more than 0.25). These will function like the real deal. We also divide the data 80-20 between training and testing. After that, we run the Supervised algorithms and do the metric evaluation.
-  
+<br>
+<br>
 We have implemented Naive Bayes algorithm, Logistic regression and Support Vector Machine.
 The below is images are the confusion matrices we have generated for the dataset.
-
+# Confusion Matrix:
 ## Naive bayes:
 
 <img src="NB.jpeg">
