@@ -138,10 +138,15 @@ Based on the confusion matrix above, Precision, Recall and F1 Score for all the 
 
   ## ROC Graphs for our implementations:
   
+  
+## Naive bayes (ROC Curve):
   <img src="NBROC.jpeg">
   
+## Logistic Regression (ROC Curve):
   <img src="LRROC.jpeg">
   
+  
+## Support Vector Machine (ROC Curve):
   <img src="SVMROC.jpeg">
   
   From the ROC curves, it is observed that the logistic Regression performs the best followed by the Support Vector Machine and Naive Bayes.
