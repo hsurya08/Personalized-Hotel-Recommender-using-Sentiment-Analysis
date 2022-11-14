@@ -92,10 +92,14 @@ The below are images of the confusion matrices we have generated for the dataset
 ## Evaluation Metrics:
 | Evaluation Metrics  | Naive Bayes | Logistic Regression | Support Vector Machine| 
 | ------------- | ------------- | ------------- | ------------- |
-| F1 Score | Content Cell  | Content Cell  | Content Cell  |
-| Accuracy   | Content Cell  | Content Cell  | Content Cell  |
-| Accuracy   | Content Cell  | Content Cell  | Content Cell  |
-## Unsupervised Learning (Future Work)
+| F1 Score     | Content Cell  | Content Cell | Content Cell  |
+| Accuracy     | Content Cell  | Content Cell | Content Cell  |
+| Precision    | Content Cell  | Content Cell | Content Cell  |
+| Micro Avg    | Content Cell  | Content Cell | Content Cell  |
+| Macro Avg    | Content Cell  | Content Cell | Content Cell  |
+| Weighted Avg | Content Cell  | Content Cell | Content Cell  |
+  
+  ## Unsupervised Learning (Future Work)
     
   <!-- <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
   <li>Ability to provide the best hotels based on the user preferences.</li>
