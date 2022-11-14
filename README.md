@@ -162,7 +162,7 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
 ## Support Vector Machine (ROC Curve):
   <img src="SVMROC.jpeg">
   
-  From the ROC curves, it is observed that the logistic Regression performs the best followed by the Support Vector Machine and Naive Bayes.
+  From the ROC curves, it is justified that the logistic Regression performs better than the Support Vector Machine and Naive Bayes.
   
 ## Unsupervised Learning (Future Work):
     
