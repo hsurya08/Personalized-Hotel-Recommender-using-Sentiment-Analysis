@@ -122,7 +122,7 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
   <img src="gannt.png">
 </a>
 
-# Team Responsibilities
+# Team Contribution
 <ul>
   <li><strong>Sunil Ravilla</strong> - Supervised Learning, Data collection and Cleaning</li>
   <li><strong>Prasanth Bathala</strong> - Supervised Learning, Data collection and Cleaning</li>
