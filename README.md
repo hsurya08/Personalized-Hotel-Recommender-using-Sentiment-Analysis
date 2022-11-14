@@ -93,7 +93,7 @@ The below are images of the confusion matrices we have generated for the dataset
 
 We have used different evaluation metrics on the output of our models. The outcomes are tabulated below.
 | Evaluation Metrics  | Macro Average Precision | Weighted Average Precision  | Macro Average Recall | Weighted Average Recall | Macro Average F-1 Score | Weighted Average F-1 Score | Accuracy |
-| ------------- | ------------- | ------------- | ------------- | ------------- |------------- |------------- |
+| ------------- | ------------- | ------------- | ------------- | ------------- |------------- |------------- |------------- |
 | Naive Bayes    |  0.66 | 0.65 | 0.66 | 0.66 | 0.65 | 0.65 | 0.65 |
 | Logistic Regression    | 0.73 | 0.73 | 0.73 | 0.73 | 0.73 | 0.73  | 0.73 |
 | Support Vector Machine | 0.72  | 0.72 | 0.71 | 0.71 | 0.71 | 0.71   | 0.71 |
