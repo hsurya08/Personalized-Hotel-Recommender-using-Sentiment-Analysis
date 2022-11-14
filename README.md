@@ -30,14 +30,12 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 ## Unsupervised Learning
 <ol>
   <li>Hierarchical Clustering</li>
-  <!--
   <li>GMM</li>
   <li>DBSCAN</li>
-  -->
 </ol>
 
 ## Dataset Collection and Cleaning
-<div align ="justify"> The project makes use of the “515k-hotel-reviews-data-in-europe” dataset for training the models. The data was scraped from Booking.com. 515,000 people The data comprises of reviews evaluated by 515,000 people for 1493 upmarket hotels in Europe. There are 17 feature columns in total, including Hotel Address, Review Date, Average Score, Hotel Name, etc. in the csv file. The dataset's unused columns have been removed because our model currently relies only on some columns of information from it.
+<div align ="justify"> The project makes use of the “515k-hotel-reviews-data-in-europe” dataset for training the models. The data was scraped from Booking.com. The data comprises of reviews evaluated by 515,000 people for 1493 upmarket hotels in Europe. There are 17 feature columns in total, including Hotel Address, Review Date, Average Score, Hotel Name, etc., in the csv file. The unused columns in the dataset were removed because they don't have significant contribution to the model.
 <br>
 <br>
 Additionally, some of the data samples were just given with the overall ratings rather than a descriptive comments. Since the project concentrates on the user preferences rather than quantitative review value, such data is replaced with an empty string.
@@ -62,12 +60,12 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 ## Supervised Learning
 <!--
 <ul>
-  <li>Build a Sentiment classifier to tag the reviews into positive, negative, and neutral categories with an accuracy of 60 – 70 %.</li>
-  <li>Analyze it with different classification algorithms.</li>
+  <li>Modeled a Sentiment classifier to tag the reviews as positive, negative, or neutral categories with an accuracy of 60 – 70 %.</li>
+  <li>Analyzed it with different classification algorithms.</li>
 </ul>
 -->
 ### Approach:
-<div align ="justify"> For the purpose of categorizing our data into classes of positive, negative, and neutral information, we use the supervised learning methods like Multi-class Logistic Regression, Multinomial Naive Bayes, and Support Vector Machine. For training and testing, the data are split in an 80-20 ratio. The algorithms are assessed using many metrics, which are listed below. This makes it easier to compare them.
+<div align ="justify"> For the purpose of categorizing our data into classes of positive, negative, and neutral information, we use the supervised learning methods like Multi-class Logistic Regression, Multinomial Naive Bayes, and Support Vector Machine. For training and testing, the data was split in an 80:20 ratio.
 <br>
 <br>
 <div align ="justify"> The cleaned and analyzed raw datset has uncategorized reviews. To categorize them, we use a library called **Vader Sentiment Analyzer** which will calculate the sentiment score for each review in the dataset. The range of Sentiment Score varies between -1 and +1. In order to classiy them into the buckets of negative, neutral and positive, a threshold is fixed. The classification of the reviews based on the sentiment score is as follows:
@@ -78,15 +76,12 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
   
   => Define the class as Positive, if the sentiment score is between +0.25 and +1.
   
-  This classificaion of data from the Vader Semtiment Analyzer is assumed to be the ground truth labels of the data. With data split of 80:20 as train and test samples, Supervised learning algorthms are applied to classify the data. Further, the model's performance is evaluated by various metrics such as F1 score, Accuracy, Precision, Recall, and ROC-AUC. 
+  This classificaion of data from the Vader Semtiment Analyzer is assumed to be the ground truth labels of the data. With data split of 80:20 as train and test samples, Supervised learning algorithms are applied to classify the data. Further, the model's performance is evaluated by various metrics such as F1 score, Accuracy, Precision, Recall, and ROC-AUC. 
   
 <br>
-<br>
-
 ### Implementation:
 
-  A total of 3 models are implemented for the task of classifying the reviews. Multinomial Naive Bayes, Logistic Regression and Support Vector Machine are utilized to classify the dataset into the positive, negative and neutral. The model's performance and results are as follows:
-
+Multinomial Naive Bayes, Logistic Regression and Support Vector Machine were utilized to classify the reviews into the positive, negative and neutral. 
  The confustion matrix for all the models are as follows:
   
 
@@ -135,7 +130,7 @@ Based on the confusion matrix above, Precision, Recall and F1 Score for all the 
 
   From the above metrics, it is observed that Logistic Regression performs the best in classifying the reviews into positive, negative and neutral followed by the Support Vector Machine and Naive Bayes. 
   
-  Further, to complement the justification, Receiver Operating Characteristic Curves for all the models are plotted. 
+  Further, to complement the justification, Receiver Operating Characteristic (ROC) Curves for all the models were plotted. 
 
 
   ## ROC Graphs for our implementations:
@@ -162,28 +157,26 @@ Based on the confusion matrix above, Precision, Recall and F1 Score for all the 
    
   ### Approach:
   <div align ="justify">
-  We plan to use Hierarchial clustering to cluster the words. The goal of this Hierarchical clustering is to identify the key themes in a collection of reviews. For that, we group the words with similar meanings             
-  together. Once the results of the hierarchical clustering have been reduced to the most advantageous dendrograms, we assign the cluster with an appropriate aspect 
-  name.
+  We plan to use Hierarchial clustering to cluster the similar words. The goal of this Hierarchical clustering is to identify the key attributes in a collection of reviews. For that, we group the words with similar meanings. Once the dendogram obtained from the hierarchical clustering have been disected into clusters, we assign each of the cluster with an appropriate aspect name.
     
     
   ### Steps:
-  <li>Firstly, we create a noun work vector from each review. Ex: [ ‘Food’, ‘Noodles’, ‘room’] </li>
-  <li>After the noun vector is formed, we use the Spacy library to determine how similar each word is with other word in the vector. A size of words x words similarity   matrix is generated.</li>
+  <li>Firstly, we create a noun vector from each review. Ex: [ ‘Food’, ‘Noodles’, ‘room’] </li>
+  <li>After the noun vector is formed, we use the Spacy library to determine how similar each word is with other word in the vector. A matrix of size (words x words) with similarity values is generated.</li>
     
-  <li>The Hierarchical clustering receives this similarity matrix as a correlation matrix. The Coorelation matrix for a single example is as shown below:</li>
+  <li>The Coorelation matrix for a single example is as shown below:</li>
     
   <ol>
     
   <img src="correlation.png">
   </ol>
   
-  <li>Hierarchical clustering output is dissected into dendrograms.</li>
+  <li>The dendogram obtained from Hierarchial clustering is dissected into clusters.</li>
   <ol>
   <img src="hierar.png">
   </ol>
 
-
+<!--
 # Evaluation Metric
   
 ## Supervised Learning
@@ -204,6 +197,7 @@ Based on the confusion matrix above, Precision, Recall and F1 Score for all the 
   <li>Beta-CV</li>
   <li>METEOR</li>
 </ul>
+-->
 
 # Proposed Timeline
 <a href="Ganntchart.xlsx" download>
