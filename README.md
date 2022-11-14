@@ -76,10 +76,11 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
   <li>Ability to provide the best hotels based on the user preferences.</li>
   <li>Examine it with various clustering Techniques.</li>
   -->
-  <div align ="justify">  ## Usage:
+  <div align ="justify">   Usage:
   The goal of this Hierarchical clustering is to identify the key themes in a collection of reviews. For that, we group the words with similar meanings             
   together.Once the results of the hierarchical clustering have been reduced to the most advantageous dendrograms, we assign the cluster with an appropriate aspect 
   name.
+  Steps:
   <li>Firstly, we create a noun work vector from each review. Ex: [ ‘Food’, ‘Noodles’, ‘room’] </li>
   <li>After the noun vector is formed, we use the Spacy library to determine how similar each word is with other word in the vector. A size of words x words similarity   matrix is generated.</li>
   <ol>
