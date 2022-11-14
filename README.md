@@ -92,11 +92,11 @@ The below are images of the confusion matrices we have generated for the dataset
 ## Evaluation Metrics:
 
 We have used different evaluation metrics on the output of our models. The outcomes are tabulated below.
-| Evaluation Metrics  | Macro Average Precision | Weighted Average Precision  | Macro Average Recall | Weighted Average Recall | Macro Average F-1 Score | Weighted Average F-1 Score | 
+| Evaluation Metrics  | Macro Average Precision | Weighted Average Precision  | Macro Average Recall | Weighted Average Recall | Macro Average F-1 Score | Weighted Average F-1 Score | Accuracy |
 | ------------- | ------------- | ------------- | ------------- | ------------- |------------- |------------- |
-| Naive Bayes    |  0.66 | 0.65 | 0.66 | 0.66 | 0.65 | 0.65 | 
-| Logistic Regression    | 0.73 | 0.73 | 0.73 | 0.73 | 0.73 | 0.73  |
-| Support Vector Machine |   | |   |
+| Naive Bayes    |  0.66 | 0.65 | 0.66 | 0.66 | 0.65 | 0.65 | 0.65 |
+| Logistic Regression    | 0.73 | 0.73 | 0.73 | 0.73 | 0.73 | 0.73  | 0.73 |
+| Support Vector Machine | 0.72  | 0.72 | 0.71 | 0.71 | 0.71 | 0.71   | 0.71 |
 
 | Naive Bayes |  Precision | Recall | F1 Score
 | ------------- | ------------- | ------------- | ------------- |
@@ -110,11 +110,11 @@ We have used different evaluation metrics on the output of our models. The outco
 | Neutral      | 0.69  | 0.68 | 0.69  |
 | Positive    | 0.81  | 0.84 | 0.82  |
 
-| Support Vector Machine |  Positive | Neutral | Negative 
+| Support Vector Machine |  Precison | Recall | F1 Score 
 | ------------- | ------------- | ------------- | ------------- |
-| F1 Score     | Content Cell  | Content Cell | Content Cell  |
-| Accuracy     | Content Cell  | Content Cell | Content Cell  |
-| Precision    | Content Cell  | Content Cell | Content Cell  |
+| Negative     | 0.65  | 0.71 | 0.68  |
+| Neutral    | 0.68  | 0.65 | 0.66  |
+| Positive   | 0.82  | 0.78 | 0.80 |
 
   ## ROC Graphs for our implementations:
   
