@@ -23,7 +23,7 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 ## Supervised Learning
 <ol>
   <li>Multi-class Logistic Regression</li>
-  <li>Naive Bayes</li>
+  <li>Multi-normial Naive Bayes</li>
   <li>Support Vector Machine (SVM)</li>
   <!--
   <li>Random Forest Classifier</li>
