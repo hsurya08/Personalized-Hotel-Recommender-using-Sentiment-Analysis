@@ -76,7 +76,7 @@ E[\epsilon_n\epsilon_m]=\left\{
 0     &      & m \neq n\\
 \end{array} \right. 
 `$
-  
+```math \n sqrt(3) \n ```  
   Thus, we receive scores ranging from -1 to 1. Then, we determine thresholds for negative (less than -0.25), neutral (between -0.25 and 0.25) and positive data (more than 0.25). These will function like the real deal. We also divide the data 80-20 between training and testing. After that, we run the Supervised algorithms and do the metric evaluation.
 <br>
 <br>
