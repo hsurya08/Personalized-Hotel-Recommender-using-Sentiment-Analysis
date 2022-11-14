@@ -64,10 +64,10 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
   <li>Analyze it with different classification algorithms.</li>
 </ul>
 -->
-<div align ="justify"> We employ Supervised Learning algorithms: Multi-class Logistic Regression, Naive Bayes and Support Vector Machine, to classify our data into classes of positive, negative, and neutral. The data is divided in the ratio of 80-20 for training and testing. The algorithms are evaluated based on different metrics as given below. This further helps to compare among them. 
+<div align ="justify"> For the purpose of categorizing our data into classes of positive, negative, and neutral information, we use the supervised learning methods like Multi-class Logistic Regression, Naive Bayes, and Support Vector Machine. For training and testing, the data are split in an 80-20 ratio. The algorithms are assessed using many metrics, which are listed below. This makes it easier to compare them.
 <br>
 <br>
-<div align ="justify"> After data cleaning and processing, we use Vader Sentiment Analyzer to come up with a sentiment score for each review. This gives us scores between -1 to 1. We then assign threshold values for negative (less than -0.25), neutral (between -0.25 to 0.25) and positve (more than 0.25). These will act for ground truth. Further, we split the data into 80-20 for training and testing. We then apply the Supervised algorithms and evaluate for metric. 
+<div align ="justify"> We utilize Vader Sentiment Analyzer to calculate a sentiment score for each review after cleaning and analysing the data. Thus, we receive scores ranging from -1 to 1. Then, we determine thresholds for negative (less than -0.25), neutral (between -0.25 and 0.25) and positive data (more than 0.25). These will function like the real deal. We also divide the data 80-20 between training and testing. After that, we run the Supervised algorithms and do the metric evaluation.
   
   
 ## Unsupervised Learning (Future Work)
