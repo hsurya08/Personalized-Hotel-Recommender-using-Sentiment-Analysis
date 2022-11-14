@@ -90,10 +90,11 @@ The below are images of the confusion matrices we have generated for the dataset
 <img src="SVM.jpeg">
   
 ## Results:
-| s  | Second Header |
+| fw  | Second Header |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| F1 Score | Content Cell  |
+| Accuracy   | Content Cell  |
+| Accuracy   | Content Cell  |
 ## Unsupervised Learning (Future Work)
     
   <!-- <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
