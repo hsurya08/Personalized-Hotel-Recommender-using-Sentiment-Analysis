@@ -158,19 +158,19 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
   
   From the ROC curves, it is observed that the logistic Regression performs the best followed by the Support Vector Machine and Naive Bayes.
   
-  ## Unsupervised Learning (Future Work)
+## Unsupervised Learning (Future Work):
     
   <!-- <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
   <li>Ability to provide the best hotels based on the user preferences.</li>
   <li>Examine it with various clustering Techniques.</li>
   -->
    
-  ### Approach:
+### Approach:
   <div align ="justify">
   We plan to use Hierarchial clustering to cluster the similar words. The goal of this Hierarchical clustering is to identify the key attributes in a collection of reviews. For that, we group the words with similar meanings. Once the dendogram obtained from the hierarchical clustering have been disected into clusters, we assign each of the cluster with an appropriate aspect name.
   </div>
     
-  ### Steps:
+### Steps:
   <ol>
   <li>Firstly, we create a noun vector from each review. Ex: [ ‘Food’, ‘Noodles’, ‘room’] </li>
   <li>After the noun vector is formed, we use the Spacy library to determine how similar each word is with other word in the vector. A matrix of size (words x words) with similarity values is generated.</li>
@@ -183,6 +183,7 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
   <img src="hierar.png">
   </ol>
 <!--
+
 # Evaluation Metric
   
 ## Supervised Learning
