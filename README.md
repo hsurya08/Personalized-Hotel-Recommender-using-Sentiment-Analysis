@@ -72,13 +72,16 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 We have implemented Naive Bayes algorithm, Logistic regression and Support Vector Machine.
 The below is images are the confusion matrices we have generated for the dataset.
 
-Naive bayes:
+## Naive bayes:
+
 <img src="NB.jpeg">
 
-Logistic algorithm:
+## Logistic algorithm:
+
 <img src="LR.jpeg">
 
-SVM:
+## SVM:
+  
 <img src="SVM.jpeg">
   
 ## Unsupervised Learning (Future Work)
