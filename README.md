@@ -30,8 +30,10 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 ## Unsupervised Learning
 <ol>
   <li>Hierarchical Clustering</li>
+  <!--
   <li>GMM</li>
   <li>DBSCAN</li>
+-->
 </ol>
 
 ## Dataset Collection and Cleaning
