@@ -30,9 +30,7 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 ## Unsupervised Learning
 <ol>
   <li>Hierarchical Clustering</li>
-  <li>Usage:
-      The goal of this Hierarchical clustering is to identify the key themes in a collection of reviews. For that, we group the words with similar meanings         together.Once the results of the hierarchical clustering have been reduced to the most advantageous dendrograms, we assign the cluster with an appropriate aspect name.
-</li>
+  <li>GMM</li>
   <li>DBSCAN</li>
 </ol>
 
@@ -61,9 +59,15 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 
 ## Unsupervised Learning
 <ul>
-  <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
+  <!-- <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
   <li>Ability to provide the best hotels based on the user preferences.</li>
   <li>Examine it with various clustering Techniques.</li>
+  -->
+  <div align ="justify">  Usage:
+  The goal of this Hierarchical clustering is to identify the key themes in a collection of reviews. For that, we group the words with similar meanings             
+  together.Once the results of the hierarchical clustering have been reduced to the most advantageous dendrograms, we assign the cluster with an appropriate aspect 
+  name.
+
 </ul>
 
 ## Supervised Learning
