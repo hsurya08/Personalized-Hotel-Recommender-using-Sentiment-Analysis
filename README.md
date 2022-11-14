@@ -120,6 +120,8 @@ Based on the confusion matrix above, Precision, Recall and F1 Score for all the 
 | Neutral    | 0.68  | 0.65 | 0.66  |
 | Positive   | 0.82  | 0.78 | 0.80 |
   
+ 
+  Based on the Precision, Recall and F1 Score calculated above, The metrics like Macro-average Precision, Weighted Average Precision, Macro Average Recall, Weighted Average Recall, Macro Average F-1 Score, Weighted Average F-1 Score and accuracy are computed and tabulated below.
   
   | Evaluation Metrics  | Macro Average Precision | Weighted Average Precision  | Macro Average Recall | Weighted Average Recall | Macro Average F-1 Score | Weighted Average F-1 Score | Accuracy |
 | ------------- | ------------- | ------------- | ------------- | ------------- |------------- |------------- |------------- |
@@ -127,6 +129,9 @@ Based on the confusion matrix above, Precision, Recall and F1 Score for all the 
 | Logistic Regression    | 0.73 | 0.73 | 0.73 | 0.73 | 0.73 | 0.73  | 0.73 |
 | Support Vector Machine | 0.72  | 0.72 | 0.71 | 0.71 | 0.71 | 0.71   | 0.71 |
 
+  From the above metrics, it is observed that Logistic Regression performs the best in classifying the reviews into positive, negative and neutral followed by the Support Vector Machine and Naive Bayes. 
+  
+  Further, to complement the justification, Receiver Operating Characteristic Curves for all the models are plotted. 
 
 
   ## ROC Graphs for our implementations:
@@ -137,6 +142,8 @@ Based on the confusion matrix above, Precision, Recall and F1 Score for all the 
   
   <img src="SVMROC.jpeg">
   
+  From the ROC curves, it is observed that the logistic Regression performs the best followed by the Support Vector Machine and Naive Bayes.
+  
   ## Unsupervised Learning (Future Work)
     
   <!-- <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
@@ -146,19 +153,22 @@ Based on the confusion matrix above, Precision, Recall and F1 Score for all the 
    
   ### Approach:
   <div align ="justify">
-  The goal of this Hierarchical clustering is to identify the key themes in a collection of reviews. For that, we group the words with similar meanings             
-  together.Once the results of the hierarchical clustering have been reduced to the most advantageous dendrograms, we assign the cluster with an appropriate aspect 
+  We plan to use Hierarchial clustering to cluster the words. The goal of this Hierarchical clustering is to identify the key themes in a collection of reviews. For that, we group the words with similar meanings             
+  together. Once the results of the hierarchical clustering have been reduced to the most advantageous dendrograms, we assign the cluster with an appropriate aspect 
   name.
     
     
   ### Steps:
   <li>Firstly, we create a noun work vector from each review. Ex: [ ‘Food’, ‘Noodles’, ‘room’] </li>
   <li>After the noun vector is formed, we use the Spacy library to determine how similar each word is with other word in the vector. A size of words x words similarity   matrix is generated.</li>
+    
+    <li>The Hierarchical clustering receives this similarity matrix as a correlation matrix. The Coorelation matrix for a single example is as shown below:</li>
+    
   <ol>
     
   <img src="correlation.png">
   </ol>
-  <li>The Hierarchical clustering receives this similarity matrix as a correlation matrix.</li>
+  
   <li>Hierarchical clustering output is dissected into dendrograms.</li>
   <ol>
   <img src="hierar.png">
