@@ -73,13 +73,13 @@ We have implemented Naive Bayes algorithm, Logistic regression and Support Vecto
 The below is images are the confusion matrices we have generated for the dataset.
 
 Naive bayes:
-<img src="NB.jpg">
+<img src="NB.jpeg">
 
 Logistic algorithm:
-<img src="LR.jpg">
+<img src="LR.jpeg">
 
 SVM:
-<img src="CleanedDataFrame.jpg">
+<img src="SVM.jpeg">
   
 ## Unsupervised Learning (Future Work)
     
