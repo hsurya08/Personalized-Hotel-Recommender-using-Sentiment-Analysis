@@ -117,8 +117,11 @@ We have used different evaluation metrics on the output of our models. The outco
 | Precision    | Content Cell  | Content Cell | Content Cell  |
 
   ROC Graphs for our implementations:
+  
   <img src="NBROC.jpeg">
+  
   <img src="LRROC.jpeg">
+  
   <img src="SVMROC.jpeg">
   
   ## Unsupervised Learning (Future Work)
