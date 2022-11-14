@@ -77,12 +77,21 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 <div align ="justify"> After data cleaning and processing, we use Vader Sentiment Analyzer to come up with a sentiment score for each review. This gives us scores between -1 to 1. We then assign threshold values for negative (less than -0.25), neutral (between -0.25 to 0.25) and positve (more than 0.25). These will act for ground truth. Further, we split the data into 80-20 for training and testing. We then apply the Supervised algorithms and evaluate for metric. 
   
 # Evaluation Metric
+  
+## Supervised Learning
+  
 <ul>
   <li>F Measure </li>
   <li>Recall </li>
   <li>Precision</li>
   <li>Accuracy</li>
   <li>Support</li>
+ </ul>
+ 
+  <div align ="justify"> The classification report of all 3 supervised algorithm gives us various scores. The overall accuracy among all three is comparable, that being around 70%. 
+  
+ ## Unsupervised Learning 
+ <ul>
   <li>Silhouette</li>
   <li>Beta-CV</li>
   <li>METEOR</li>
