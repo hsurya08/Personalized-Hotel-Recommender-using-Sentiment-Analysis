@@ -112,13 +112,13 @@ Based on the confusion matrix above, Precision, Recall and F1 Score for all the 
 | Negative     | 0.62  | 0.66 | 0.64  |
 | Neutral      | 0.65  | 0.54 | 0.59  |
 | Positive     | 0.70  | 0.78 | 0.74  |
-  
+<br>
 | Logistic Regression |  Precision | Recall | F1 Score 
 | ------------- | ------------- | ------------- | ------------- |
 | Negative     | 0.70  | 0.67 | 0.68  |
 | Neutral      | 0.69  | 0.68 | 0.69  |
 | Positive    | 0.81  | 0.84 | 0.82  |
-
+<br>
 | Support Vector Machine |  Precison | Recall | F1 Score 
 | ------------- | ------------- | ------------- | ------------- |
 | Negative     | 0.65  | 0.71 | 0.68  |
@@ -139,7 +139,7 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
   Further, to complement the justification, Receiver Operating Characteristic (ROC) Curves for all the models were plotted. 
 
 
-  ## ROC Graphs for our implementations:
+## ROC Graphs for our implementations:
   
   
 ## Naive bayes (ROC Curve):
