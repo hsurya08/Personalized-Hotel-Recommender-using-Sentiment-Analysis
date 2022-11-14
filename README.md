@@ -160,7 +160,8 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
   
 ## Unsupervised Learning (Future Work):
     
-  <!-- <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
+  <!--
+  <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
   <li>Ability to provide the best hotels based on the user preferences.</li>
   <li>Examine it with various clustering Techniques.</li>
   -->
