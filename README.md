@@ -1,6 +1,6 @@
 Personalized Hotel Recommender using Sentiment Analysis
 # Project Proposal
-Proposal Video: <iframe width="620" height="415" src="https://www.youtube.com/embed/JXZaFI5LYqo">
+<iframe width="620" height="415" src="https://www.youtube.com/embed/JXZaFI5LYqo">
 </iframe>
 
 # Introduction
