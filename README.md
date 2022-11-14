@@ -169,7 +169,7 @@ Based on the confusion matrix above, Precision, Recall and F1 Score for all the 
   <li>Firstly, we create a noun work vector from each review. Ex: [ ‘Food’, ‘Noodles’, ‘room’] </li>
   <li>After the noun vector is formed, we use the Spacy library to determine how similar each word is with other word in the vector. A size of words x words similarity   matrix is generated.</li>
     
-    <li>The Hierarchical clustering receives this similarity matrix as a correlation matrix. The Coorelation matrix for a single example is as shown below:</li>
+  <li>The Hierarchical clustering receives this similarity matrix as a correlation matrix. The Coorelation matrix for a single example is as shown below:</li>
     
   <ol>
     
