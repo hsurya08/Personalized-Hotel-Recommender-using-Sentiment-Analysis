@@ -90,15 +90,32 @@ The below are images of the confusion matrices we have generated for the dataset
 <img src="SVM.jpeg">
   
 ## Evaluation Metrics:
+
+We have used different evaluation metrics on the output of our models. The outcomes are tabulated below.
 | Evaluation Metrics  | Naive Bayes | Logistic Regression | Support Vector Machine| 
+| ------------- | ------------- | ------------- | ------------- |
+| Micro Avg    | Content Cell  | Content Cell | Content Cell  |
+| Macro Avg    | Content Cell  | Content Cell | Content Cell  |
+| Weighted Avg | Content Cell  | Content Cell | Content Cell  |
+
+| Naive Bayes |  Positive | Neutral | Negative 
 | ------------- | ------------- | ------------- | ------------- |
 | F1 Score     | Content Cell  | Content Cell | Content Cell  |
 | Accuracy     | Content Cell  | Content Cell | Content Cell  |
 | Precision    | Content Cell  | Content Cell | Content Cell  |
-| Micro Avg    | Content Cell  | Content Cell | Content Cell  |
-| Macro Avg    | Content Cell  | Content Cell | Content Cell  |
-| Weighted Avg | Content Cell  | Content Cell | Content Cell  |
   
+| Logistic Regression |  Positive | Neutral | Negative 
+| ------------- | ------------- | ------------- | ------------- |
+| F1 Score     | Content Cell  | Content Cell | Content Cell  |
+| Accuracy     | Content Cell  | Content Cell | Content Cell  |
+| Precision    | Content Cell  | Content Cell | Content Cell  |
+
+| Support Vector Machine |  Positive | Neutral | Negative 
+| ------------- | ------------- | ------------- | ------------- |
+| F1 Score     | Content Cell  | Content Cell | Content Cell  |
+| Accuracy     | Content Cell  | Content Cell | Content Cell  |
+| Precision    | Content Cell  | Content Cell | Content Cell  |
+
   ## Unsupervised Learning (Future Work)
     
   <!-- <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
