@@ -72,7 +72,6 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 <br>
 <br>
 
-  
 ### Implementation:
 We have implemented Naive Bayes algorithm, Logistic regression and Support Vector Machine on our dataset to categorize the reviews into positive, negative and neutral.
 The below are images of the confusion matrices we have generated for the dataset.
