@@ -71,7 +71,9 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 <div align ="justify"> The cleaned and analyzed raw datset has uncategorized reviews. To categorize them, we use a library called **Vader Sentiment Analyzer** which will calculate the sentiment score for each review in the dataset. The range of Sentiment Score varies between -1 and +1. In order to classiy them into the buckets of negative, neutral and positive, a threshold is fixed. The classification of the reviews based on the sentiment score is as follows:
 
   => Define the class as Negative, if the sentiment score is between -1 and -0.25
+  
   => Define the class as Neutral, if the sentiment score is between -0.25 and +0.25
+  
   => Define the class as Positive, if the sentiment score is between +0.25 and +1.
   
   This classificaion of data from the Vader Semtiment Analyzer is assumed to be the ground truth labels of the data. With data split of 80:20 as train and test samples, Supervised learning algorthms are applied to classify the data. Further, the model's performance is evaluated by various metrics such as F1 score, Accuracy, Precision, Recall, and ROC-AUC. 
