@@ -63,6 +63,7 @@ Screenshots of both the original and modified data sets are provided below.
 
 The Preprocessing step includes tokenization, tagging parts of speech, removing stop words, stemming, noun extraction and noun filtering. Tokenization mainly focuess on detecting words. Then the words get tags that determine their syntactic role (such as verb, adjective, etc.) in the sentence. The stop words like "a", "an", "the", "that", "of", "from" are deleted. Then the suffix and prefix of the words are deleted and the stem of the word is retained.
 <br>
+<br>
 The stemming process helps to reduce all derivatives of a word, which are not semantically different, into a common concept. For example, if a document contains words like ‘‘eating’’ and ‘‘eaten’’, they are all considered as ‘‘eat’’. As we are looking for preferences of the user that are usually in the form of nouns, the words that have received the noun tag are extracted. Since the number of these nouns may be very large, unrelated nouns are filtered.
 
 # Potential Results and Discussions:
