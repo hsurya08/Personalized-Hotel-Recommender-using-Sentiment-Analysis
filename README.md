@@ -1,6 +1,6 @@
 Personalized Hotel Recommender using Sentiment Analysis
 # Project Proposal
-<iframe width="620" height="415" src="https://www.youtube.com/embed/JXZaFI5LYqo"> </iframe>
+Proposal Video: https://www.youtube.com/embed/JXZaFI5LYqo
 
 # Introduction
 <div align ="justify"> One of the most basic human activity is travel. Finding quality lodging when traveling is the hardest part. According to data from travel reservations in 2018, there were around 148 million online bookings, of which 82% were made using an app or website [1]. This highlights how dependent individuals are on internet and applications to find lodging. Most of these websites and applications offer some sort of measure to assist customers in making hotel reservations, but frequently they don't focus on the user and don't take into consideration their unique needs. Many studies on this subject of hotel recommendation systems focus just on user preferences and ignore hotel reviews or fail to account for the important differences between various users [2]. The main goal of this project to provide user with personalized  hotel recommendation.
@@ -21,8 +21,8 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 <ol>
   <li>Multi-class Logistic Regression</li>
   <li>Naive Bayes</li>
-  <!--
   <li>Support Vector Machine (SVM)</li>
+  <!--
   <li>Random Forest Classifier</li>
   -->
 </ol>
@@ -70,8 +70,10 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
   <li>Analyze it with different classification algorithms.</li>
 </ul>
 
-<div align ="justify"> We employ Supervised Learning algorithms: Multi-class Logistic Regression and Naive Bayes, to classify our data into classes of positive, negative, and neutral. The data is divided in the ratio of 80-20 for training and testing. The algorithms are evaluated based on different metrics as given below. This further helps to compare between the two. 
+<div align ="justify"> We employ Supervised Learning algorithms: Multi-class Logistic Regression, Naive Bayes and Support Vector Machine, to classify our data into classes of positive, negative, and neutral. The data is divided in the ratio of 80-20 for training and testing. The algorithms are evaluated based on different metrics as given below. This further helps to compare among them. 
 
+<div align ="justify"> After data cleaning and processing, we use Vader Sentiment Analyzer to come up with a sentiment score for each review. This gives us scores between -1 to 1. We then assign threshold values for negative (less than -0.25), neutral (between -0.25 to 0.25) and positve (more than 0.25). These will act for ground truth. Further, we split the data into 80-20 for training and testing. We then apply the Supervised algorithms and evaluate for metric. 
+  
 # Evaluation Metric
 <ul>
   <li>F Measure </li>
