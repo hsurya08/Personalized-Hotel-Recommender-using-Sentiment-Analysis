@@ -94,21 +94,21 @@ The below are images of the confusion matrices we have generated for the dataset
 We have used different evaluation metrics on the output of our models. The outcomes are tabulated below.
 | Evaluation Metrics  | Macro Average Precision | Weighted Average Precision  | Macro Average Recall | Weighted Average Recall | Macro Average F-1 Score | Weighted Average F-1 Score | 
 | ------------- | ------------- | ------------- | ------------- | ------------- |------------- |------------- |
-| Naive Bayes    |  0.66 | 0.65 | 0.66 | 0.66 | 0.65 | 0.65 | 0.65  |
-| Logistic Regression    |  | |   |
+| Naive Bayes    |  0.66 | 0.65 | 0.66 | 0.66 | 0.65 | 0.65 | 
+| Logistic Regression    | 0.73 | 0.73 | 0.73 | 0.73 | 0.73 | 0.73  |
 | Support Vector Machine |   | |   |
 
-| Naive Bayes |  Positive | Neutral | Negative 
+| Naive Bayes |  Precision | Recall | F1 Score
 | ------------- | ------------- | ------------- | ------------- |
-| F1 Score     | Content Cell  | Content Cell | Content Cell  |
-| Accuracy     | Content Cell  | Content Cell | Content Cell  |
-| Precision    | Content Cell  | Content Cell | Content Cell  |
+| Negative     | 0.62  | 0.66 | 0.64  |
+| Neutral      | 0.65  | 0.54 | 0.59  |
+| Positive     | 0.70  | 0.78 | 0.74  |
   
-| Logistic Regression |  Positive | Neutral | Negative 
+| Logistic Regression |  Precision | Recall | F1 Score 
 | ------------- | ------------- | ------------- | ------------- |
-| F1 Score     | Content Cell  | Content Cell | Content Cell  |
-| Accuracy     | Content Cell  | Content Cell | Content Cell  |
-| Precision    | Content Cell  | Content Cell | Content Cell  |
+| Negative     | 0.70  | 0.67 | 0.68  |
+| Neutral      | 0.69  | 0.68 | 0.69  |
+| Positive    | 0.81  | 0.84 | 0.82  |
 
 | Support Vector Machine |  Positive | Neutral | Negative 
 | ------------- | ------------- | ------------- | ------------- |
