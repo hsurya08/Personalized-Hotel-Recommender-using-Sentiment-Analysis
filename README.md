@@ -67,6 +67,8 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
   <li>Analyze it with different classification algorithms.</li>
 </ul>
 
+<div align ="justify"> We employ Supervised Learning algorithms: Multi-class Logistic Regression and Naive Bayes, to classify our data into classes of positive, negative, and neutral. The data is divided in the ratio of 80-20 for training and testing. The algorithms are evaluated based on different metrics and this further helps choose between the two. 
+
 # Evaluation Metric
 <ul>
   <li>F Measure </li>
