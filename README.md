@@ -1,5 +1,5 @@
 Personalized Hotel Recommender using Sentiment Analysis
-# Project Proposal
+# Project - Midterm Report
 Proposal Video: https://www.youtube.com/embed/JXZaFI5LYqo
 
 # Introduction
