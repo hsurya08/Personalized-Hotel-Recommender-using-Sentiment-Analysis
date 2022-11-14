@@ -90,11 +90,10 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
   <img src="correlation.png">
   </ol>
   <li>The Hierarchical clustering receives this similarity matrix as a correlation matrix.</li>
+  <li>Hierarchical clustering output is dissected into dendrograms.</li>
   <ol>
-    
   <img src="hierar.png">
   </ol>
-  <li>Hierarchical clustering output is dissected into dendrograms.</li>
 
 
 # Evaluation Metric
