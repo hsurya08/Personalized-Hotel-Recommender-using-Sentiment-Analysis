@@ -116,7 +116,7 @@ We have used different evaluation metrics on the output of our models. The outco
 | Accuracy     | Content Cell  | Content Cell | Content Cell  |
 | Precision    | Content Cell  | Content Cell | Content Cell  |
 
-  ROC Graphs for our implementations:
+  ## ROC Graphs for our implementations:
   
   <img src="NBROC.jpeg">
   
