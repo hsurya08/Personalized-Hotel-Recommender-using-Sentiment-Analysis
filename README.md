@@ -57,19 +57,6 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 
 # Potential Results
 
-## Unsupervised Learning
-<ul>
-  <!-- <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
-  <li>Ability to provide the best hotels based on the user preferences.</li>
-  <li>Examine it with various clustering Techniques.</li>
-  -->
-  <div align ="justify">  Usage:
-  The goal of this Hierarchical clustering is to identify the key themes in a collection of reviews. For that, we group the words with similar meanings             
-  together.Once the results of the hierarchical clustering have been reduced to the most advantageous dendrograms, we assign the cluster with an appropriate aspect 
-  name.
-
-</ul>
-
 ## Supervised Learning
 <!--
 <ul>
@@ -82,6 +69,23 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
 <br>
 <div align ="justify"> After data cleaning and processing, we use Vader Sentiment Analyzer to come up with a sentiment score for each review. This gives us scores between -1 to 1. We then assign threshold values for negative (less than -0.25), neutral (between -0.25 to 0.25) and positve (more than 0.25). These will act for ground truth. Further, we split the data into 80-20 for training and testing. We then apply the Supervised algorithms and evaluate for metric. 
   
+  
+## Unsupervised Learning
+
+  <!-- <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
+  <li>Ability to provide the best hotels based on the user preferences.</li>
+  <li>Examine it with various clustering Techniques.</li>
+  -->
+  <div align ="justify">  Usage:
+  The goal of this Hierarchical clustering is to identify the key themes in a collection of reviews. For that, we group the words with similar meanings             
+  together.Once the results of the hierarchical clustering have been reduced to the most advantageous dendrograms, we assign the cluster with an appropriate aspect 
+  name.
+  <li>Firstly, we create a noun work vector from each review. Ex: [ ‘Food’, ‘Noodles’, ‘room’] </li>
+  <li>After the noun vector is formed, we use the Spacy library to determine how similar each word is. A size of words x words similarity matrix is generated. </li>
+  <li>The Hierarchical clustering receives this similarity matrix as a correlation matrix.</li>
+  <li>Hierarchical clustering output is dissected into dendrograms.</li>
+
+
 # Evaluation Metric
   
 ## Supervised Learning
