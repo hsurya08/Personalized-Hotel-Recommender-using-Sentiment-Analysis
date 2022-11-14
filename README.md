@@ -1,7 +1,6 @@
 Personalized Hotel Recommender using Sentiment Analysis
 # Project Proposal
-<iframe width="620" height="415" src="https://www.youtube.com/embed/JXZaFI5LYqo">
-</iframe>
+Proposal Video: https://www.youtube.com/embed/JXZaFI5LYqo
 
 # Introduction
 <div align ="justify"> One of the most basic human activity is travel. Finding quality lodging when traveling is the hardest part. According to data from travel reservations in 2018, there were around 148 million online bookings, of which 82% were made using an app or website [1]. This highlights how dependent individuals are on internet and applications to find lodging. Most of these websites and applications offer some sort of measure to assist customers in making hotel reservations, but frequently they don't focus on the user and don't take into consideration their unique needs. Many studies on this subject of hotel recommendation systems focus just on user preferences and ignore hotel reviews or fail to account for the important differences between various users [2]. The main goal of this project to provide user with personalized  hotel recommendation.
@@ -21,8 +20,11 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 ## Supervised Learning
 <ol>
   <li>Multi-class Logistic Regression</li>
+  <li>Naive Bayes</li>
+  <!--
   <li>Support Vector Machine (SVM)</li>
   <li>Random Forest Classifier</li>
+  -->
 </ol>
 
 ## Unsupervised Learning
@@ -68,13 +70,15 @@ Cleaned Dataset Drive Link: https://drive.google.com/file/d/1AzyuTb1BVKKusaFd5LG
   <li>Analyze it with different classification algorithms.</li>
 </ul>
 
-<div align ="justify"> We employ Supervised Learning algorithms: Multi-class Logistic Regression and Naive Bayes, to classify our data into classes of positive, negative, and neutral. The data is divided in the ratio of 80-20 for training and testing. The algorithms are evaluated based on different metrics and this further helps choose between the two. 
+<div align ="justify"> We employ Supervised Learning algorithms: Multi-class Logistic Regression and Naive Bayes, to classify our data into classes of positive, negative, and neutral. The data is divided in the ratio of 80-20 for training and testing. The algorithms are evaluated based on different metrics as given below. This further helps to compare between the two. 
 
 # Evaluation Metric
 <ul>
   <li>F Measure </li>
   <li>Recall </li>
   <li>Precision</li>
+  <li>Accuracy</li>
+  <li>Support</li>
   <li>Silhouette</li>
   <li>Beta-CV</li>
   <li>METEOR</li>
