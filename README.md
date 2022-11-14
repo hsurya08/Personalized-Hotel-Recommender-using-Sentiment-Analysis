@@ -116,6 +116,11 @@ We have used different evaluation metrics on the output of our models. The outco
 | Accuracy     | Content Cell  | Content Cell | Content Cell  |
 | Precision    | Content Cell  | Content Cell | Content Cell  |
 
+  ROC Graphs for our implementations:
+  <img src="NB.jpeg">
+  <img src="NB.jpeg">
+  <img src="NB.jpeg">
+  
   ## Unsupervised Learning (Future Work)
     
   <!-- <li>Build a Hotel Recommendation system based on the categories of the reviews.</li>
