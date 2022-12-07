@@ -179,7 +179,7 @@ The purpose of unsupervised learning is to cluster the nouns with similar semant
 Clustering of words is implemented using KMeans, Gaussian Mixture Models(GMM), and Hierarchical Clustering. Considering the advantage that the Hierarchical clustering does not need have the number of clusters defined at beginning, we chose to implement it by following the below steps
 </div>
 
-### Hierarchical Clustering:
+## Hierarchical Clustering:
 ### Steps:
   <ol>
   <li>Firstly, we create a noun vector from each review. Ex: [ ‘Food’, ‘Noodles’, ‘room’] </li>
@@ -194,7 +194,7 @@ Clustering of words is implemented using KMeans, Gaussian Mixture Models(GMM), a
    <li>The threshold value to split the dendogram obtained in the previous step is decided based on the number of clusters required.</li>
   </ol>
   
-### K-means & GMM:
+## K-means & GMM:
 <div align ="justify">
 The clusters obtained from the Hierarchical clustering were pretty accurate. However, when it is implemented using the entire dataset, the model resulted a large number of clusters which could not be limited by modifying the threshold value and, hence, is not suitable for this usecase. Therefore, We have implemented K-means clustering algorithm, with 8 as the number of clusters and was able to get desired cluster of words at the expense of accuracy. We implemented the same using GMM (Gaussian Mixer Model) with 8 components, and the results show a higher accuracy compared to that of K-means. These clustering algorithm were evaluated using metrics such as Silhouette Coeffifcient, Calinski-Harabasz Index, Davies-Bouldin Index to identify the one with better performance.
 </div>
