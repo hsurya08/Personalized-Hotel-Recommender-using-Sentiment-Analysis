@@ -242,18 +242,13 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
 </ul>
 -->
 
-# Proposed Timeline
-<a href="Ganntchart.xlsx" download>
-  <img src="gannt.png">
-</a>
-
 # Team Contribution
 <ul>
-  <li><strong>Sunil Ravilla</strong> - Supervised Learning, Data collection and Cleaning</li>
-  <li><strong>Prasanth Bathala</strong> - Supervised Learning, Data collection and Cleaning</li>
-  <li><strong>Nigam Katta</strong> - Unsupervised Learning, Exploratory Data Analysis</li>
-  <li><strong>Hemanth Sai Surya Kumar Tammana</strong> - Unsupervised Learning, Evaluation Metrics</li>
-  <li><strong>Sahaj Jha</strong> - Unsupervised Learning, Evaluation Metrics</li>
+  <li><strong>Sunil Ravilla</strong> - Supervised Learning, Dashboard</li>
+  <li><strong>Prasanth Bathala</strong> - Supervised Learning, Evaluation Metrics</li>
+  <li><strong>Nigam Katta</strong> - Unsupervised Learning, Evaluation Metrics</li>
+  <li><strong>Hemanth Sai Surya Kumar Tammana</strong> - Unsupervised Learning, Exploratory Data Analysis</li>
+  <li><strong>Sahaj Jha</strong> - Unsupervised Learning, Data Collection and Cleaning</li>
 </ul>
 
 
