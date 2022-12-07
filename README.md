@@ -193,7 +193,6 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
 ### Approach:
 <div align ="justify">
 The purpose of unsupervised learning is to cluster the nouns with similar semantics into clusters and thereby these clusters are named manullay based on the words in the clusters. To achieve this task, First, we extracted the noun in the sentence using an open-Source tool called pyABSA, and its confidence factor with the help of the supervised learning algorithm implemented above. Secondly, the words extracted are translated into word embeddings with the help of BERT to get the contexual information. These word embeddings are used for clustering the words. Once the clusters are generated, we manually named each cluster with an appropriate aspect. Finally, clusters are mapped to each hotel based on the word set and confidence level. 
-<br>  
 </div>
 
 ### Implementation:
