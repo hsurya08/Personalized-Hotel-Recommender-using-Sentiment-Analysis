@@ -73,16 +73,18 @@ The Preprocessing step includes tokenization, tagging parts of speech, removing 
 The stemming process helps to reduce all derivatives of a word, which are not semantically different, into a common concept. For example, if a document contains words like ‘‘eating’’ and ‘‘eaten’’, they are all considered as ‘‘eat’’. As we are looking for preferences of the user that are usually in the form of nouns, the words that have received the noun tag are extracted. Since the number of these nouns may be very large, unrelated nouns are filtered.
 
 # Data Analysis:
+## Analysing the number of reviews based on the reason for reviewer visit
   <img src="newplot.png">
 <div align="justify">
 The bar chart shows that most people visit hotels for leisure trips as couples or by themselves. Fewer people came with their family or group, and even fewer came with friends. Out of 515k reviews, there are 100k reviews tagged as business, which means 19% of the reviewers came for business trips. However, we should consider that people who came for leisure trips are usually more likely to have time or are more willing to write reviews, while those who came for business trips may be too busy or simply do not want to write any reviews. 
  </div>
 
+## Aspects that attracts the customers
 <img src="Positive Reviews.png">
 <div align="justify">
 For Positive Reviews, most people are probably satisfied with the location, very convenient and easy-to-find restaurants, friendly and helpful staff, clean room, and comfortable bed.
 </div>
-
+## Aspects that need improvements
 <img src="Negative Reviews.png">
 <div align="justify">
 The negative reviews also mentioned “breakfast”, “room” and “staff” quite often, but maybe people were complaining about the staff who were being rude, the small rooms, and the coffee provided during the breakfast. The air conditioning or the shower system may need improvements as we see words like “hot”, “cold”, “air”, “bathroom” and “shower” in the word cloud. The hotel may also need to solve issues related to soundproofing and parking.
@@ -98,7 +100,7 @@ The negative reviews also mentioned “breakfast”, “room” and “staff” 
 </ul>
 -->
 ### Approach:
-<div align ="justify"> For the purpose of categorizing our data into classes of positive, negative, and neutral information, we use the supervised learning methods like Multi-class Logistic Regression, Multinomial Naive Bayes, and Support Vector Machine. For training and testing, the data was split in an 80:20 ratio.
+<div align ="justify"> For the purpose of categorizing our data into classes of positive, negative, and neutral information, we use the supervised learning methods like Multi-class Logistic Regression, Multinomial Naive Bayes, and Support Vector Machine. For training and testing, the data was split in an 60:20:20 ratio.
 <br>
 </div>
  <div align ="justify"> The cleaned and analyzed raw datset has uncategorized reviews. To categorize them, we use a library called <strong>Vader Sentiment Analyzer</strong> which will calculate the sentiment score for each review in the dataset. The range of Sentiment Score varies between -1 and +1. In order to classiy them into the buckets of negative, neutral and positive, a threshold is fixed. The classification of the reviews based on the sentiment score is as follows:
@@ -110,7 +112,7 @@ The negative reviews also mentioned “breakfast”, “room” and “staff” 
   
    <li> Define the class as Positive, if the sentiment score is between +0.25 and +1. </li>
  </ul>
-<div align ="justify"> This classificaion of data from the Vader Semtiment Analyzer is assumed to be the ground truth labels of the data. With data split of 80:20 as train and test samples, Supervised learning algorithms are applied to classify the data. Further, the model's performance is evaluated by various metrics such as F1 score, Accuracy, Precision, Recall, and ROC-AUC. 
+<div align ="justify"> This classificaion of data from the Vader Semtiment Analyzer is assumed to be the ground truth labels of the data. With data split of 60:20:20 as train, validation, and test samples. Supervised learning algorithms are applied to classify the data. Further, the model's performance is evaluated by various metrics such as F1 score, Accuracy, Precision, Recall, and ROC-AUC. 
   </div>
   
 ### Implementation:
@@ -197,15 +199,14 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
   -->
    
 ### Approach:
-  <div align ="justify">
+<div align ="justify">
   <!--
   We plan to use Hierarchial clustering to cluster the similar words. The goal of this Hierarchical clustering is to identify the key attributes in a collection of reviews. For that, we group the words with similar meanings. Once the dendogram obtained from the hierarchical clustering have been disected into clusters, we assign each of the cluster with an appropriate aspect name. -->
-  We implemented both Hierarchial clustering, K-means and GMM for forming clusters of the aspects generated. In doing so we employ different library implementations. We first use a pyABSA library to extract a lot of aspects (nouns) throughout different reviews. This is done using the aspect_extractor function of pyABSA. For each hotel, each review within it, is parsed which then undergoes the aforementioned supervised learning algorithms to give sentiment to the aspects. A confidence factor is also generated using the pyABSA. It uses BERT to perform aspect extraction. During generation of large number of aspects with different confidence scores, a multiplicative operation is performed. Positve one is multiplied to the confidence score of assigned sentiment 'positve', negative 1 is multiplied to the confidence score of assigned sentiment 'negative' and zero in case of 'neutral' to generate the aspect score. 
+The purpose of unsupervised learning is to cluster the nouns with similar semantics into clusters and thereby these clusters are named manullay based on the words in the clusters. To achieve this task, First, we extracted the noun in the sentence using an open-Source tool called pyABSA, and its confidence factor with the help of the supervised learning algorithm implemented above. Secondly, the words extracted are translated into word embeddings with the help of BERT to get the contexual information. These word embeddings are used for clustering the words. Once the clusters are generated, we manually named each cluster with an appropriate aspect. Finally, clusters are mapped to each hotel based on the word set and confidence level. 
 <br>  
-<br>
-  Further, with each review the repititive aspects aren't added but their confidence score modified according to the sentiment. Atlast a huge dictionary of aspects with sentiment and it's score is generated. We then use BERT embeddings and spaCy to find similar words (in terms of numeric values). Getting numeric values, these are used as cordinate points for a distance based unsupervised learning algorithms such as K-means, GMM, Hierarchial clustering. After that unsupervised learning algorithms are used to make clusters. These clusters are manually labelled and we finally narrow down to 7/8 clusters.
   </div>
-    
+### Implementation:
+Clustering of words is implemented using KMeans, Gaussian Mixture Models(GMM), and Hierarchical Clustering. Considering the advantage that the Hierarchical clustering does not need have the number of clusters defined at beginning, we chose to implement it by following the below steps
 ### Steps:
   <ol>
   <li>Firstly, we create a noun vector from each review. Ex: [ ‘Food’, ‘Noodles’, ‘room’] </li>
@@ -217,38 +218,27 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
   
   <li>The dendogram obtained from Hierarchial clustering is dissected into clusters.</li>
   <img src="hierar.png">
+   <li>The threshold value to split the dendogram obtained in the previous step is decided based on the number of clusters required.</li>
   </ol>
-<!--
+<div align ="justify">
+The clusters obtained from the Hierarchical clustering were pretty accurate. However, when it is implemented using the entire dataset, the model resulted a large number of clusters which could not be limited by modifying the threshold value and, hence, is not suitable for this usecase. Therefore, We have implemented K-means clustering algorithm, with 8 as the number of clusters and was able to get desired cluster of words at the expense of accuracy. We implemented the same using GMM (Gaussian Mixer Model) with 8 components, and the results show a higher accuracy compared to that of K-means. These clustering algorithm were evaluated using metrics such as Silhouette Coeffifcient, Calinski-Harabasz Index, Davies-Bouldin Index to identify the one with better performance.
+</div>
 
 # Evaluation Metric
-  
-## Supervised Learning
-  
-<ul>
-  <li>F Measure </li>
-  <li>Recall </li>
-  <li>Precision</li>
-  <li>Accuracy</li>
-  <li>Support</li>
- </ul>
- 
-  <div align ="justify"> The classification report of all 3 supervised algorithm gives us various scores. The overall accuracy among all three is comparable, that being around 70%. 
-  
  ## Unsupervised Learning 
  <ul>
   <li>Silhouette</li>
   <li>Beta-CV</li>
   <li>METEOR</li>
 </ul>
--->
 
 # Team Contribution
 <ul>
-  <li><strong>Sunil Ravilla</strong> - Supervised Learning, Dashboard</li>
-  <li><strong>Prasanth Bathala</strong> - Supervised Learning, Evaluation Metrics</li>
-  <li><strong>Nigam Katta</strong> - Unsupervised Learning, Evaluation Metrics</li>
-  <li><strong>Hemanth Sai Surya Kumar Tammana</strong> - Unsupervised Learning, Exploratory Data Analysis</li>
-  <li><strong>Sahaj Jha</strong> - Unsupervised Learning, Data Collection and Cleaning</li>
+  <li><strong>Sunil Ravilla</strong> - Supervised Learning, Data collection and Cleaning</li>
+  <li><strong>Prasanth Bathala</strong> - Supervised Learning, Data collection and Cleaning</li>
+  <li><strong>Nigam Katta</strong> - Unsupervised Learning, Exploratory Data Analysis</li>
+  <li><strong>Hemanth Sai Surya Kumar Tammana</strong> - Unsupervised Learning, Evaluation Metrics</li>
+  <li><strong>Sahaj Jha</strong> - Unsupervised Learning, Evaluation Metrics</li>
 </ul>
 
 
