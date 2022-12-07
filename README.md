@@ -6,7 +6,7 @@ Personalized Hotel Recommender using Sentiment Analysis
 ></iframe>
 # Dashboard
 Note: Please allow this webpage to access your location to show the nearest hotels.
-<a href="https://hotel-recomender.vercel.app/" target="_blank"><img src="dashboard.png" alt="Dashboard" style="width:100%;height:250px;"></a>
+<a href="https://hotel-recomender.vercel.app/" target="_blank"><img src="dashboard.png" alt="Dashboard" style="width:100%;height:400px;"></a>
 
 
 # Introduction
