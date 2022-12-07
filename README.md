@@ -225,6 +225,12 @@ The clusters obtained from the Hierarchical clustering were pretty accurate. How
   <li>METEOR</li>
 </ul>
 
+| Model |  Silhouette coefficient | Davies-Bouldin Index | Calinski - Harabasz Index 
+| ------------- | ------------- | ------------- | ------------- |
+| K-means     | 0.43  | 0.705 | 850.62  |
+| GMM      | 0.45  | 0.68 | 1050  |
+
+<br>
 # Team Contribution
 <ul>
   <li><strong>Sunil Ravilla</strong> - Supervised Learning, Dashboard</li>
