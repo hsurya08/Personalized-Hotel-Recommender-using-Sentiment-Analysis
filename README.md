@@ -113,7 +113,7 @@ The negative reviews also mentioned “breakfast”, “room” and “staff” 
    <li> Define the class as Positive, if the sentiment score is between +0.25 and +1. </li>
  </ul>
 <div align ="justify"> This classificaion of data from the Vader Semtiment Analyzer is assumed to be the ground truth labels of the data. With data split of 60:20:20 as train, validation, and test samples. Supervised learning algorithms are applied to classify the data. Further, the model's performance is evaluated by various metrics such as F1 score, Accuracy, Precision, Recall, and ROC-AUC. 
-  </div>
+</div>
   
 ### Implementation:
 <div align ="justify">
@@ -200,11 +200,9 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
    
 ### Approach:
 <div align ="justify">
-  <!--
-  We plan to use Hierarchial clustering to cluster the similar words. The goal of this Hierarchical clustering is to identify the key attributes in a collection of reviews. For that, we group the words with similar meanings. Once the dendogram obtained from the hierarchical clustering have been disected into clusters, we assign each of the cluster with an appropriate aspect name. -->
 The purpose of unsupervised learning is to cluster the nouns with similar semantics into clusters and thereby these clusters are named manullay based on the words in the clusters. To achieve this task, First, we extracted the noun in the sentence using an open-Source tool called pyABSA, and its confidence factor with the help of the supervised learning algorithm implemented above. Secondly, the words extracted are translated into word embeddings with the help of BERT to get the contexual information. These word embeddings are used for clustering the words. Once the clusters are generated, we manually named each cluster with an appropriate aspect. Finally, clusters are mapped to each hotel based on the word set and confidence level. 
 <br>  
-  </div>
+</div>
 ### Implementation:
 Clustering of words is implemented using KMeans, Gaussian Mixture Models(GMM), and Hierarchical Clustering. Considering the advantage that the Hierarchical clustering does not need have the number of clusters defined at beginning, we chose to implement it by following the below steps
 ### Steps:
