@@ -1,10 +1,14 @@
 Personalized Hotel Recommender using Sentiment Analysis
-# Project - Midterm Report
+# Project - Final Report
 <iframe
   src="https://www.youtube.com/embed/JXZaFI5LYqo"
   style="width:100%; height:500px;"
 ></iframe>
-
+# Live Dashboard
+<iframe
+  src="https://hotel-recomender.vercel.app/"
+  style="width:100%; height:500px;"
+></iframe>
 # Introduction
 <div align ="justify"> One of the most basic human activity is travel. Finding quality lodging when traveling is the hardest part. According to data from travel reservations in 2018, there were around 148 million online bookings, of which 82% were made using an app or website [1]. This highlights how dependent individuals are on internet and applications to find lodging. Most of these websites and applications offer some sort of measure to assist customers in making hotel reservations, but frequently they don't focus on the user and don't take into consideration their unique needs. Many studies on this subject of hotel recommendation systems focus just on user preferences and ignore hotel reviews or fail to account for the important differences between various users [2]. The main goal of this project to provide user with personalized  hotel recommendation.
 <br>
