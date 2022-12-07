@@ -81,6 +81,7 @@ The stemming process helps to reduce all derivatives of a word, which are not se
   The negative reviews also mentioned “breakfast”, “room” and “staff” quite often, but maybe people were complaining about the staff who were being rude, the small rooms, and the coffee provided during the breakfast. The air conditioning or the shower system may need improvements as we see words like “hot”, “cold”, “air”, “bathroom” and “shower” in the word cloud. The hotel may also need to solve issues related to soundproofing and parking.
 
   </div>
+  
 # Results and Discussions:
 
 ## Supervised Learning
