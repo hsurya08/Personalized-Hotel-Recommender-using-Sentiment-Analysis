@@ -34,8 +34,8 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 <ol>
   <li>Hierarchical Clustering</li>
   <li>K-Means</li>
-  <!--
   <li>GMM</li>
+  <!--
   <li>DBSCAN</li>
 -->
 </ol>
@@ -182,7 +182,7 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
   We implemented both Hierarchial clustering, K-means and GMM for forming clusters of the aspects generated. In doing so we employ different library implementations. We first use a pyABSA library to extract a lot of aspects (nouns) throughout different reviews. This is done using the aspect_extractor function of pyABSA. For each hotel, each review within it, is parsed which then undergoes the aforementioned supervised learning algorithms to give sentiment to the aspects. A confidence factor is also generated using the pyABSA. It uses BERT to perform aspect extraction. During generation of large number of aspects with different confidence scores, a multiplicative operation is performed. Positve one is multiplied to the confidence score of assigned sentiment 'positve', negative 1 is multiplied to the confidence score of assigned sentiment 'negative' and zero in case of 'neutral' to generate the aspect score. 
 <br>  
 <br>
-  Further, with each review the repititive aspects aren't added but their confidence score modified according to the sentiment. Atlast a huge dictionary of aspects with sentiment and it's score is generated. We then use BERT embeddings and spaCy to find similar words (in terms of numeric values). Getting numeric values, these are used as cordinate points for a distance based unsupervised learning algorithms such as K-means, GMM, Hierarchial clustering.After that unsupervised learning algorithms are used to make clusters. These clusters are manually labelled and we finally narrow down to 7/8 clusters.
+  Further, with each review the repititive aspects aren't added but their confidence score modified according to the sentiment. Atlast a huge dictionary of aspects with sentiment and it's score is generated. We then use BERT embeddings and spaCy to find similar words (in terms of numeric values). Getting numeric values, these are used as cordinate points for a distance based unsupervised learning algorithms such as K-means, GMM, Hierarchial clustering. After that unsupervised learning algorithms are used to make clusters. These clusters are manually labelled and we finally narrow down to 7/8 clusters.
   </div>
     
 ### Steps:
