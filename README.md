@@ -33,6 +33,7 @@ Instead of displaying a generic hotel rating, our goal is to help the customer b
 ## Unsupervised Learning
 <ol>
   <li>Hierarchical Clustering</li>
+  <li>K-Means</li>
   <!--
   <li>GMM</li>
   <li>DBSCAN</li>
@@ -66,7 +67,7 @@ The Preprocessing step includes tokenization, tagging parts of speech, removing 
 <br>
 The stemming process helps to reduce all derivatives of a word, which are not semantically different, into a common concept. For example, if a document contains words like ‘‘eating’’ and ‘‘eaten’’, they are all considered as ‘‘eat’’. As we are looking for preferences of the user that are usually in the form of nouns, the words that have received the noun tag are extracted. Since the number of these nouns may be very large, unrelated nouns are filtered.
 
-# Potential Results and Discussions:
+# Results and Discussions:
 
 ## Supervised Learning
 <!--
@@ -178,7 +179,7 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
   <div align ="justify">
   <!--
   We plan to use Hierarchial clustering to cluster the similar words. The goal of this Hierarchical clustering is to identify the key attributes in a collection of reviews. For that, we group the words with similar meanings. Once the dendogram obtained from the hierarchical clustering have been disected into clusters, we assign each of the cluster with an appropriate aspect name. -->
-  We implemented both Hierarchial clustering and K-means for forming clusters of the aspects generated. In doing so we use employ different library implementation. We first use a pyABSA library to extract a lot of aspects (nouns) throughout different reviews. This is done using the aspect_extractor function of pyABSA. For each hotel, each review within it is parsed which then undergoes the aforementioned supervised learning algorithms to give sentiment to the aspects. 
+  We implemented both Hierarchial clustering and K-means for forming clusters of the aspects generated. In doing so we use employ different library implementation. We first use a pyABSA library to extract a lot of aspects (nouns) throughout different reviews. This is done using the aspect_extractor function of pyABSA. For each hotel, each review within it is parsed which then undergoes the aforementioned supervised learning algorithms to give sentiment to the aspects. A confidence factor is also generated using the pyABSA. It uses BERT to perform aspect extraction. During generation of large number of aspects with different confidence scores, a multiplicative operation is performed. 
   </div>
     
 ### Steps:
