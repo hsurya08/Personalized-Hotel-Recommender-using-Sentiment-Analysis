@@ -196,7 +196,7 @@ Clustering of words is implemented using KMeans, Gaussian Mixture Models(GMM), a
   
 ## K-means & GMM:
 <div align ="justify">
-The clusters obtained from the Hierarchical clustering were pretty accurate. However, when it is implemented using the entire dataset, the model resulted a large number of clusters which could not be limited by modifying the threshold value and, hence, is not suitable for this usecase. Therefore, We have implemented K-means clustering algorithm, with 8 as the number of clusters and was able to get desired cluster of words at the expense of accuracy. We implemented the same using GMM (Gaussian Mixer Model) with 8 components, and the results show a higher accuracy compared to that of K-means. These clustering algorithm were evaluated using metrics such as Silhouette Coeffifcient, Calinski-Harabasz Index, Davies-Bouldin Index to identify the one with better performance.
+The clusters obtained from the Hierarchical clustering were pretty accurate. However, when it is implemented using the entire dataset, the model resulted in a large number of clusters which could not be limited by modifying the threshold value and, hence, is not suitable for this usecase. Therefore, We have implemented K-means clustering algorithm, with 8 as the number of clusters and was able to get desired cluster of words at the expense of accuracy. We implemented the same using GMM (Gaussian Mixture Model) with 8 components, and the results show a higher accuracy compared to that of K-means. These clustering algorithm were evaluated using metrics such as Silhouette Coeffifcient, Calinski-Harabasz Index, Davies-Bouldin Index to identify the one with better performance.
 </div>
 
 # Evaluation Metric
