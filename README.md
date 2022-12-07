@@ -24,27 +24,6 @@ The dataset that we are using consists reviews of various hotels present in Euro
 Instead of displaying a generic hotel rating, our goal is to help the customer by making more individualized hotel suggestions that consider their preferences for different factors like pricing, cuisine, atmosphere, etc. In turn, this facilitates a quicker and more effective process for the customer to choose the best hotel depending on their preferences.
 </div>
 
-# Methods
-## Supervised Learning
-<ol>
-  <li>Multi-class Logistic Regression</li>
-  <li>Multi-normial Naive Bayes</li>
-  <li>Support Vector Machine (SVM)</li>
-  <!--
-  <li>Random Forest Classifier</li>
-  -->
-</ol>
-
-## Unsupervised Learning
-<ol>
-  <li>Hierarchical Clustering</li>
-  <li>K-Means</li>
-  <li>GMM</li>
-  <!--
-  <li>DBSCAN</li>
--->
-</ol>
-
 ## Dataset Collection and Cleaning
 <div align ="justify"> The project makes use of the “515k-hotel-reviews-data-in-europe” dataset for training the models. The data was scraped from Booking.com. The data comprises of reviews evaluated by 515,000 people for 1493 upmarket hotels in Europe. There are 17 feature columns in total, including Hotel Address, Review Date, Average Score, Hotel Name, etc., in the csv file. The unused columns in the dataset were removed because they don't have significant contribution to the model.
 <br>
@@ -199,7 +178,7 @@ The purpose of unsupervised learning is to cluster the nouns with similar semant
 <div align ="justify">
 Clustering of words is implemented using KMeans, Gaussian Mixture Models(GMM), and Hierarchical Clustering. Considering the advantage that the Hierarchical clustering does not need have the number of clusters defined at beginning, we chose to implement it by following the below steps
 </div>
-
+### Hierarchical Clustering:
 ### Steps:
   <ol>
   <li>Firstly, we create a noun vector from each review. Ex: [ ‘Food’, ‘Noodles’, ‘room’] </li>
@@ -213,6 +192,8 @@ Clustering of words is implemented using KMeans, Gaussian Mixture Models(GMM), a
   <img src="hierar.png">
    <li>The threshold value to split the dendogram obtained in the previous step is decided based on the number of clusters required.</li>
   </ol>
+  
+### K-means & GMM:
 <div align ="justify">
 The clusters obtained from the Hierarchical clustering were pretty accurate. However, when it is implemented using the entire dataset, the model resulted a large number of clusters which could not be limited by modifying the threshold value and, hence, is not suitable for this usecase. Therefore, We have implemented K-means clustering algorithm, with 8 as the number of clusters and was able to get desired cluster of words at the expense of accuracy. We implemented the same using GMM (Gaussian Mixer Model) with 8 components, and the results show a higher accuracy compared to that of K-means. These clustering algorithm were evaluated using metrics such as Silhouette Coeffifcient, Calinski-Harabasz Index, Davies-Bouldin Index to identify the one with better performance.
 </div>
