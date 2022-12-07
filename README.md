@@ -67,6 +67,10 @@ The Preprocessing step includes tokenization, tagging parts of speech, removing 
 <br>
 The stemming process helps to reduce all derivatives of a word, which are not semantically different, into a common concept. For example, if a document contains words like ‘‘eating’’ and ‘‘eaten’’, they are all considered as ‘‘eat’’. As we are looking for preferences of the user that are usually in the form of nouns, the words that have received the noun tag are extracted. Since the number of these nouns may be very large, unrelated nouns are filtered.
 
+# Data Analysis:
+<div align="justify">
+  
+  </div>
 # Results and Discussions:
 
 ## Supervised Learning
