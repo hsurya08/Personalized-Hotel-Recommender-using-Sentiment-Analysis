@@ -7,7 +7,7 @@ Personalized Hotel Recommender using Sentiment Analysis
 # Live Dashboard
 <iframe
   src="https://hotel-recomender.vercel.app/"
-  style="width:100%; height:500px;"
+  style="width:100%; height:1000px;"
 ></iframe>
 
 # Introduction
