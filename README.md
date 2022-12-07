@@ -181,7 +181,9 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
   We plan to use Hierarchial clustering to cluster the similar words. The goal of this Hierarchical clustering is to identify the key attributes in a collection of reviews. For that, we group the words with similar meanings. Once the dendogram obtained from the hierarchical clustering have been disected into clusters, we assign each of the cluster with an appropriate aspect name. -->
   We implemented both Hierarchial clustering and K-means for forming clusters of the aspects generated. In doing so we use employ different library implementation. We first use a pyABSA library to extract a lot of aspects (nouns) throughout different reviews. This is done using the aspect_extractor function of pyABSA. For each hotel, each review within it is parsed which then undergoes the aforementioned supervised learning algorithms to give sentiment to the aspects. A confidence factor is also generated using the pyABSA. It uses BERT to perform aspect extraction. During generation of large number of aspects with different confidence scores, a multiplicative operation is performed. Positve one is multiplied to the confidence score of assigned sentiment 'positve', negative 1 is multiplied to the confidence score of assigned sentiment 'negative' and zero in case of 'neutral' to generate the aspect score. 
   
-  kdjab
+  </div>
+  <div aligh ="justify">
+  Further, with each review the repititive aspects aren't added but their confidence score modified according to the sentiment. Atlast a huge dictionary of aspects with sentiment and it's score is generated. We then use BERT embeddings and spaCy to find similar words (in terms of numeric values). After that unsupervised learning algorithms are used to make clusters. These clusters are manually labelled and we finally narrow down to 7/8 clusters.
   </div>
     
 ### Steps:
