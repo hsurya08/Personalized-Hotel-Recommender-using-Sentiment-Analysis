@@ -218,7 +218,7 @@ The clusters obtained from the Hierarchical clustering were pretty accurate. How
 </div>
 
 # Evaluation Metric
- ## Unsupervised Learning 
+## Unsupervised Learning 
  
 | Model |  Silhouette coefficient | Davies-Bouldin Index | Calinski - Harabasz Index 
 | ------------- | ------------- | ------------- | ------------- |
