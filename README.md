@@ -1,10 +1,11 @@
 Personalized Hotel Recommender using Sentiment Analysis
 # Project - Final Report
 <iframe
-  src="https://www.youtube.com/embed/JXZaFI5LYqo"
+  src="https://youtu.be/0p735_bOaM0"
   style="width:100%; height:500px;"
 ></iframe>
 # Live Dashboard
+Note: Please allow this webpage to access your location to show the nearest hotels.
 <iframe
   src="https://hotel-recomender.vercel.app/"
   style="width:100%; height:1000px;"
