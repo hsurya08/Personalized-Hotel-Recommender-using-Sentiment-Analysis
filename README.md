@@ -73,19 +73,20 @@ The Preprocessing step includes tokenization, tagging parts of speech, removing 
 The stemming process helps to reduce all derivatives of a word, which are not semantically different, into a common concept. For example, if a document contains words like ‘‘eating’’ and ‘‘eaten’’, they are all considered as ‘‘eat’’. As we are looking for preferences of the user that are usually in the form of nouns, the words that have received the noun tag are extracted. Since the number of these nouns may be very large, unrelated nouns are filtered.
 
 # Data Analysis:
-<div align="justify">
   <img src="newplot.png">
-  The bar chart shows that most people visit hotels for leisure trips as couples or by themselves. Fewer people came with their family or group, and even fewer came with friends. Out of 515k reviews, there are 100k reviews tagged as business, which means 19% of the reviewers came for business trips. However, we should consider that people who came for leisure trips are usually more likely to have time or are more willing to write reviews, while those who came for business trips may be too busy or simply do not want to write any reviews. 
+<div align="justify">
+The bar chart shows that most people visit hotels for leisure trips as couples or by themselves. Fewer people came with their family or group, and even fewer came with friends. Out of 515k reviews, there are 100k reviews tagged as business, which means 19% of the reviewers came for business trips. However, we should consider that people who came for leisure trips are usually more likely to have time or are more willing to write reviews, while those who came for business trips may be too busy or simply do not want to write any reviews. 
+ </div>
 
+<img src="Positive Reviews.png">
+<div align="justify">
+For Positive Reviews, most people are probably satisfied with the location, very convenient and easy-to-find restaurants, friendly and helpful staff, clean room, and comfortable bed.
+</div>
 
-  <img src="Positive Reviews.png">
-  For Positive Reviews, most people are probably satisfied with the location, very convenient and easy-to-find restaurants, friendly and helpful staff, clean room, and comfortable bed.
-
-  
-  <img src="Negative Reviews.png">
-  The negative reviews also mentioned “breakfast”, “room” and “staff” quite often, but maybe people were complaining about the staff who were being rude, the small rooms, and the coffee provided during the breakfast. The air conditioning or the shower system may need improvements as we see words like “hot”, “cold”, “air”, “bathroom” and “shower” in the word cloud. The hotel may also need to solve issues related to soundproofing and parking.
-
-  </div>
+<img src="Negative Reviews.png">
+<div align="justify">
+The negative reviews also mentioned “breakfast”, “room” and “staff” quite often, but maybe people were complaining about the staff who were being rude, the small rooms, and the coffee provided during the breakfast. The air conditioning or the shower system may need improvements as we see words like “hot”, “cold”, “air”, “bathroom” and “shower” in the word cloud. The hotel may also need to solve issues related to soundproofing and parking.
+</div>
   
 # Results and Discussions:
 
