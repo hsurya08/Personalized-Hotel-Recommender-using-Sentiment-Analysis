@@ -178,6 +178,7 @@ The purpose of unsupervised learning is to cluster the nouns with similar semant
 <div align ="justify">
 Clustering of words is implemented using KMeans, Gaussian Mixture Models(GMM), and Hierarchical Clustering. Considering the advantage that the Hierarchical clustering does not need have the number of clusters defined at beginning, we chose to implement it by following the below steps
 </div>
+
 ### Hierarchical Clustering:
 ### Steps:
   <ol>
