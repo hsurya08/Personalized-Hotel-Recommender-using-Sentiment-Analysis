@@ -1,7 +1,7 @@
 Personalized Hotel Recommender using Sentiment Analysis
 # Project - Final Report
 <iframe
-  src="https://youtu.be/0p735_bOaM0/"
+  src="https://www.youtube.com/embed/0p735_bOaM0/"
   style="width:100%; height:500px;"
 ></iframe>
 # Live Dashboard
