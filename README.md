@@ -219,16 +219,12 @@ The clusters obtained from the Hierarchical clustering were pretty accurate. How
 
 # Evaluation Metric
  ## Unsupervised Learning 
- <ul>
-  <li>Silhouette</li>
-  <li>Beta-CV</li>
-  <li>METEOR</li>
-</ul>
-
+ <div align ="justify">
 | Model |  Silhouette coefficient | Davies-Bouldin Index | Calinski - Harabasz Index 
 | ------------- | ------------- | ------------- | ------------- |
 | K-means     | 0.43  | 0.705 | 850.62  |
 | GMM      | 0.45  | 0.68 | 1050  |
+</div>
 
 # Team Contribution
 <ul>
