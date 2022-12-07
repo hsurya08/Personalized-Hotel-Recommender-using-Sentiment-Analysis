@@ -164,7 +164,7 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
   
   From the ROC curves, it is justified that the logistic Regression performs better than the Support Vector Machine and Naive Bayes.
   
-## Unsupervised Learning (Future Work):
+## Unsupervised Learning :
     
   <!--
       <ol>
@@ -176,7 +176,9 @@ Based on the Precision, Recall and F1 Score calculated above, The metrics like M
    
 ### Approach:
   <div align ="justify">
-  We plan to use Hierarchial clustering to cluster the similar words. The goal of this Hierarchical clustering is to identify the key attributes in a collection of reviews. For that, we group the words with similar meanings. Once the dendogram obtained from the hierarchical clustering have been disected into clusters, we assign each of the cluster with an appropriate aspect name.
+  <!--
+  We plan to use Hierarchial clustering to cluster the similar words. The goal of this Hierarchical clustering is to identify the key attributes in a collection of reviews. For that, we group the words with similar meanings. Once the dendogram obtained from the hierarchical clustering have been disected into clusters, we assign each of the cluster with an appropriate aspect name. -->
+  We implemented both Hierarchial clustering and K-means for forming clusters of the aspects generated. In doing so we use employ different library implementation. We first use a pyABSA library to extract a lot of aspects (nouns) throughout different reviews. This is done using the aspect_extractor function of pyABSA. For each hotel, each review within it is parsed which then undergoes the aforementioned supervised learning algorithms to give sentiment to the aspects. 
   </div>
     
 ### Steps:
